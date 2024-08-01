@@ -1,0 +1,23 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_body_content
+    - node.type.discontinued_archive_page
+  module:
+    - solwise_page_scrapes
+id: node.discontinued_archive_page.field_body_content
+field_name: field_body_content
+entity_type: node
+bundle: discontinued_archive_page
+label: 'Body content'
+description: 'The main content section'
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  start_marker: '<!-- InstanceBeginEditable name="main" -->'
+  end_marker: '<!-- InstanceEndEditable -->'
+  rows: 32
+field_type: html_scrape

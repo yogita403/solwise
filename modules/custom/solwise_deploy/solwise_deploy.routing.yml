@@ -1,0 +1,9 @@
+solwise.deploy:
+  path: '/admin/solwise/deploy'
+  defaults:
+    _controller: '\Drupal\solwise_deploy\Controller\DeployController::deploy'
+    _title: 'Deploy Updates'
+  options:
+    _admin_route: TRUE
+  requirements:
+    _permission: 'access devel information'

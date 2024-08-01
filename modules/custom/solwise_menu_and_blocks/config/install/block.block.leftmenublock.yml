@@ -1,0 +1,24 @@
+langcode: en
+status: false
+dependencies:
+  content:
+    - 'block_content:basic:b3ccd06c-8a19-4ad5-9811-c43d7b067608'
+  module:
+    - block_content
+  theme:
+    - base_zymphonies_theme
+id: leftmenublock
+theme: base_zymphonies_theme
+region: sidebar_first
+weight: 0
+provider: null
+plugin: 'block_content:b3ccd06c-8a19-4ad5-9811-c43d7b067608'
+settings:
+  id: 'block_content:b3ccd06c-8a19-4ad5-9811-c43d7b067608'
+  label: 'Left menu block'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

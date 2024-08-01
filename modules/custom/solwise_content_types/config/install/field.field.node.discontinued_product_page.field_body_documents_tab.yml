@@ -1,0 +1,26 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_body_documents_tab
+    - node.type.discontinued_product_page
+  module:
+    - solwise_page_scrapes
+id: node.discontinued_product_page.field_body_documents_tab
+field_name: field_body_documents_tab
+entity_type: node
+bundle: discontinued_product_page
+label: 'Body Documents Tab'
+description: ''
+required: true
+translatable: false
+default_value:
+  -
+    html: "<p>&lt;div&gt;<br />\r\n&lt;table&gt;<br />\r\n&nbsp;&nbsp; &nbsp;&lt;tbody&gt;<br />\r\n&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&lt;tr&gt;<br />\r\n&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&lt;th&gt;Sales overview leaflet&lt;/th&gt;<br />\r\n&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&lt;td&gt;&lt;a href=\"downloads/solwiseleaflets/sales-leaflet-homeplug-overview.pdf\"&gt;Download here&lt;/a&gt;&lt;/td&gt;<br />\r\n&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&lt;td&gt;07.11.14&lt;/td&gt;<br />\r\n&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&lt;/tr&gt;<br />\r\n&nbsp;&nbsp; &nbsp;&lt;/tbody&gt;<br />\r\n&lt;/table&gt;<br />\r\n&lt;/div&gt;<br />\r\n&nbsp;</p>\r\n"
+    created: null
+default_value_callback: ''
+settings:
+  start_marker: '<!-- InstanceBeginEditable name="documents" -->'
+  end_marker: '<!-- InstanceEndEditable -->'
+  rows: 8
+field_type: html_scrape

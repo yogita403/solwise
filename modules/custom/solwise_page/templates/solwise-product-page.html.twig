@@ -1,0 +1,136 @@
+<div class="node__content">
+	<div id="imageViewer">
+		<div id="imageViewer_thumbnails" class="slider_viewport">
+			<p id="imageViewer_thumbnails_up">^</p>
+			<div id="imageViewer_thumbnails_slider" class="slider_actual" style="height: 916px;">
+				{% for imageURL in pages['imageURL'] %}
+					<img alt="{{ imageURL.altText }}" class="thumb" src="{{ imageURL.image_path }}" />
+				{% endfor %}
+			</div>
+			<p id="imageViewer_thumbnails_down" style="display: block;">v</p>
+			<hr>
+		</div>
+		<div id="imageViewer_stage">
+			<h4 id="imageViewer_title">{{ pages['productDetails'].Code }}</h4>
+			<p id="imageViewer_left">&lt;&lt;</p>
+			<p id="imageViewer_right">&gt;&gt;</p>
+			<img src="https://www.solwise.co.uk/sites/default/files/2018-02/wl-patriot-usb-1.png" id="imageViewer_image" title="Click to enlarge" alt="">
+		</div>
+		<p id="imageViewer_clickPrompt">Click the image to enlarge</p>
+	</div>
+
+	<div data-quickedit-field-id="node/1633/field_body_content/en/full"><h3>{{ pages['productDetails'].Code }}</h3>
+		<p>{{ pages['productDetails'].Name }}</p>
+		<ul>
+			{% for bulletPoints in pages['bulletPoints'] %}
+				<li>{{ bulletPoints.bulletHTML }}</li>
+			{% endfor %}
+		</ul>
+		<div class="content-productinfo-block">
+			<div class="productInfo">
+				<div class="buyitnow">
+					<script>Price("{{ pages['productDetails'].Code }}");</script><br>
+					<p class="stockstatus"><script>Stock("{{ pages['productDetails'].Code }}");</script></p>
+					<a href="https://secure.solwise.co.uk/trolley.php?NewStockCode={{ pages['productDetails'].Code }}" target="SolwiseOrderWindow" class="addinteractive">
+						<img alt="Buy Now" border="0" onmouseout="this.src='/{{ directory }}/images/buynow.png';" onmouseover="this.src='/{{ directory }}/images/buynow_hover.png';" src="/{{ directory }}/images/buynow.png">
+					</a>
+				</div>
+				<h3>{{ pages['productDetails'].Code }}</h3>
+			</div>
+
+
+			{% for kitsDetails in pages['kitsDetails'] %}
+
+				<div class="productInfo">
+					<div class="buyitnow">
+						<script>KitPrice({{ pages['kitstockCode'][loop.index0]|replace({'&quot;':'\"'})|raw }});</script>
+						<p class="stockstatus"><script>KitStatus("{{ pages['kitstockCode'][loop.index0] }}");</script></p>
+						<a href="https://secure.solwise.co.uk/trolley.php?{{ pages['kitPath'][loop.index0] }}" target="SolwiseOrderWindow" 
+						class="addinteractive">
+						<img alt="Buy Now" border="0" onmouseout="this.src='/{{ directory }}/images/buynow.png';" onmouseover="this.src='/{{ directory }}/images/buynow_hover.png';" src="/{{ directory }}/images/buynow.png"></a>
+					</div>
+
+					<h3>{{ kitsDetails[0].kitName }}</h3>
+
+					<p>{{ kitsDetails[0].description }}</p>
+				</div>
+
+			{% endfor %}
+
+		</div>
+
+	</div>
+
+	<div data-quickedit-field-id="node/1633/field_head_pageconfig/en/full">    
+		<script>page.associateWithStock("WL-PATRIOT-USB");</script>
+	</div>
+	<div data-quickedit-field-id="node/1633/field_body_keyaccessories/en/full">
+		<script>printKeyAccessories();</script>
+	</div>
+	<div data-quickedit-field-id="node/1633/field_head_menumember/en/full">
+		<div class="currentPageBelongsTo" style="display:none;">	
+			wireless-usb.htm
+		</div>
+	</div>
+
+	<div id="block-quicktabsproductpage" class="contextual-region block block-quicktabs block-quicktabs-blockproduct-page">
+        <div class="content">
+           <div class="quicktabs-wrapper" id="quicktabs-product_page">
+               <ul class="quicktabs-tabs nav nav-tabs">
+                   <li class="active"><a href="{{ pages['overview'] ? '#quicktabs-tabpage-product_page-0' : '#' }}" data-toggle="tab" class="{{ pages['overview'] ? 'quicktabs-loaded' : 'quicktabs-loaded disabled' }}">Overview</a></li>
+                   <li><a href="{{ pages['specification'] ? '#quicktabs-tabpage-product_page-1' : '#' }}" data-toggle="tab" class="{{ pages['specification'] ? 'quicktabs-loaded' : 'quicktabs-loaded disabled' }}">Specification</a></li>
+                   <li><a href="{{ pages['downloads'] ? '#quicktabs-tabpage-product_page-2' : '#' }}" data-toggle="tab" class="{{ pages['downloads'] ? 'quicktabs-loaded' : 'quicktabs-loaded disabled' }}">Downloads</a></li>
+                   <li><a href="{{ pages['reviews'] ? '#quicktabs-tabpage-product_page-3' : '#' }}" data-toggle="tab" class="{{ pages['reviews'] ? 'quicktabs-loaded' : 'quicktabs-loaded disabled' }}">Reviews</a></li>
+                   <li><a href="{{ pages['brochuresComparisons'] ? '#quicktabs-tabpage-product_page-4' : '#' }}" data-toggle="tab" class="{{ pages['brochuresComparisons'] ? 'quicktabs-loaded' : 'quicktabs-loaded disabled' }}">Brochures &amp; Comparisons</a></li>
+                   <li><a href="{{ pages['videoArticles'] ? '#quicktabs-tabpage-product_page-5' : '#' }}" data-toggle="tab" class="{{ pages['videoArticles'] ? 'quicktabs-loaded' : 'quicktabs-loaded disabled' }}">Videos &amp; Articles</a></li>
+                   <li><a href="{{ pages['accessories'] ? '#quicktabs-tabpage-product_page-6' : '#' }}" data-toggle="tab" class="{{ pages['accessories'] ? 'quicktabs-loaded' : 'quicktabs-loaded disabled' }}">Accessories</a></li>
+               </ul>
+               <div class="quicktabs-main tab-content" id="quicktabs-container-product_page">
+                   <div id="quicktabs-tabpage-product_page-0" class="quicktabs-tabpage tab-pane fade in active">
+                       <div class="quicktabs-block-title">Overview</div>
+                       <div class="field-content">
+                         {{ pages['overview']|raw }}
+                       </div>
+                   </div>
+                   <div id="quicktabs-tabpage-product_page-1" class="quicktabs-tabpage quicktabs-hide tab-pane fade">
+                       <div class="quicktabs-block-title">Specification</div>
+                       <div class="field-content">
+                     {{ pages['specification']|raw }}
+                       </div>
+                   </div>
+                   <div id="quicktabs-tabpage-product_page-2" class="quicktabs-tabpage quicktabs-hide tab-pane fade">
+                       <div class="quicktabs-block-title">Downloads</div>
+                       <div class="field-content">
+                     {{ pages['downloads']|raw }}
+                       </div>
+                   </div>
+                   <div id="quicktabs-tabpage-product_page-3" class="quicktabs-tabpage quicktabs-hide tab-pane fade">
+                       <div class="quicktabs-block-title">Reviews</div>
+                       <div class="field-content">
+                           {{ pages['reviews']|raw }}
+                       </div>
+                   </div>
+                   <div id="quicktabs-tabpage-product_page-4" class="quicktabs-tabpage quicktabs-hide tab-pane fade">
+                       <div class="quicktabs-block-title">Brochures</div>
+                       <div class="field-content">
+                     {{ pages['brochuresComparisons']|raw }}
+                       </div>
+                   </div>
+                   <div id="quicktabs-tabpage-product_page-5" class="quicktabs-tabpage quicktabs-hide tab-pane fade">
+                       <div class="quicktabs-block-title">Videos</div>
+                       <div class="field-content">
+                     {{ pages['videoArticles']|raw }}
+                       </div>
+                   </div>
+                   <div id="quicktabs-tabpage-product_page-6" class="quicktabs-tabpage quicktabs-hide tab-pane fade">
+                       <div class="quicktabs-block-title">Accessories</div>
+                       <div class="field-content">
+                        {{ pages['accessories']|raw }}
+                       </div>
+                   </div>
+               </div>
+           </div>
+       </div>
+   </div> 	
+
+</div>

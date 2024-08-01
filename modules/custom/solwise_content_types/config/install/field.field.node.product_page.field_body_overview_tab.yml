@@ -1,0 +1,26 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_body_overview_tab
+    - node.type.product_page
+  module:
+    - solwise_page_scrapes
+id: node.product_page.field_body_overview_tab
+field_name: field_body_overview_tab
+entity_type: node
+bundle: product_page
+label: 'Body Overview Tab'
+description: 'The overview tab'
+required: true
+translatable: false
+default_value:
+  -
+    html: "<div>\r\n<div align=\"left\">\r\n<p>Home plug is a fast and simple way to connect to the Internet with easy connection between your computers, games consoles, laptops, smart phones anywhere in your home where you have a mains socket.</p>\r\n\r\n<p><br />\r\nYou need at least two home plugs to create the connection. Traditionally, one plug is connected to your Internet router, the 2nd plug is placed in the remote area, such as your lounge, study or kitchen. The Plug connected to the router, takes the Internet signal and transfers it along your mains wiring, the 2nd plug takes the signal and distributes it via the Ethernet port directly to your device.</p>\r\n\r\n<p>The mains passthrough socket is a useful addition to this plug. The socket is filtered which makes it ideal for plugging in other power supplies which may cause noise on your mains. &nbsp;Often lots of power supplies in one mains extension causes noisy mains which can interfere with home plugs, using the filtered socket on the mains passthrough adapter can help alleviate this problem in your home.<br />\r\nIf you are a short of sockets this adapter is useful, plug the mains passthrough device in the wall and plug your mains extension into the mains passthrough socket.</p>\r\n\r\n<p>Powered by the Qualcomm Atheros High Performance AR7400 chipset this Aztech 500AV adapter is compliant with IEEE1901 and Homeplug AV, allowing hassle free compatibility with existing Homeplug AV devices and other suppliers of home plug AV devices. &nbsp;The AR7400 includes a faster processor and high speed interface. With these added high performance abilities, the 500AV adapter is perfect for the ultra-high speed High Definition entertainment network in your home.</p>\r\n\r\n<p>Enhanced Quality of Service (QOS) provides the guaranteed bandwidth required for multimedia including TV over IP (IPTV), higher data rate broadband sharing, Online- Gaming, VoIP Calls, extending Wireless coverage, Audio-Video transmission across the network as well as Network camera connectivity.</p>\r\n\r\n<p>The Solwise and Aztech 500AV adapters all have a configuration push button for a convenient way of creating a secure home plug network without the need to use software. Security support is by 128-bit AES Hardware encryption, ensuring the network is secure.</p>\r\n\r\n<p>Remember, you will need at least two home plug devices to form a home plug connection. More home plug AV2 devices can be added to further share your network including the new Power over Ethernet and WiFi options as seen in the accessories above.</p>\r\n\r\n<p>Please note this plug is compatible with other AV products but not 85Mbps devices. It will co-exist with the 85Mbps products but not interact with them. See our compatibility chart <a href=\"net-powerline-features-interoperability.htm\">here</a></p>\r\n</div>\r\n\r\n<p>&nbsp;</p>\r\n</div>\r\n"
+    created: null
+default_value_callback: ''
+settings:
+  start_marker: '<!-- InstanceBeginEditable name="overview" -->'
+  end_marker: '<!-- InstanceEndEditable -->'
+  rows: 8
+field_type: html_scrape

@@ -1,0 +1,14 @@
+{
+  "name": "drupal/solwise",
+  "type": "drupal-module",
+  "description": "Solwise general module",
+  "keywords": ["Drupal"],
+  "license": "GPL-2.0+",
+  "homepage": "https://www.drupal.org/project/solwise",
+  "minimum-stability": "dev",
+  "support": {
+    "issues": "http://drupal.org/project/issues/solwise",
+    "source": "http://cgit.drupalcode.org/solwise"
+  },
+  "require": { }
+}

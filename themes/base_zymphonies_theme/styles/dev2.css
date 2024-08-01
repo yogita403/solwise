@@ -1,0 +1,206 @@
+/*.gallery.productindex {
+	width: 998px;
+	margin: 20px -20px;
+}
+.gallery.productindex ul.tabbedList {
+	margin: 20px 20px 10px;
+}*/
+.gallery.productindex .title {
+	padding: 5px 20px;
+	margin: 20px -20px 10px;
+	
+	font-size: 1em;
+	text-align: left;
+	
+	border-top: 1px solid #DDD;
+	border-bottom: 0px;
+	background-color: #FFF;
+	background: linear-gradient(top, #F5F5FB 0%, #FFF 100%);
+	background: -moz-linear-gradient(top, #F5F5FB 0%, #FFF 100%);
+	background: -webkit-linear-gradient(top, #F5F5FB 0%, #FFF 100%);
+}
+.gallery.productindex .title:before {
+	content: " ";
+	display: block;
+	clear: both;
+	visibility: hidden;
+}
+.gallery.productindex .title h1, .gallery.productindex .title h2 {
+	padding: 0px;
+	margin: 0px;
+	border: 0px;
+	
+	font-size: 2em;
+	text-align: left;
+	text-decoration: none;
+}
+.gallery.productindex .title p {
+	padding: 0px;
+	margin: 0px;
+}
+.productb {
+	position: relative;
+	display: block;
+	float: left;
+	width: 459px;
+
+	margin: 0px 0px;
+	padding: 5px 10px;
+	border: 1px solid #F2F2F2;
+	border: 1px solid #EAEAEA;
+	border-radius: 5px;
+	
+	text-decoration: none;
+	color: #777;
+	
+	-moz-transition: box-shadow 0.5s ease, opacity 0.5s ease,color 0.5s ease,border-color 0.5s ease,background-color 0.5s ease;
+	-webkit-transition: box-shadow 0.5s ease, opacity 0.5s ease,color 0.5s ease,border-color 0.5s ease,background-color 0.5s ease;
+	-o-transition: box-shadow 0.5s ease, opacity 0.5s ease,color 0.5s ease,border-color 0.5s ease,background-color 0.5s ease;
+	transition: box-shadow 0.5s ease, opacity 0.5s ease,color 0.5s ease,border-color 0.5s ease,background-color 0.5s ease;
+	
+	width: 437px;
+	margin: 0px 10px 20px;
+}
+.productb:hover {
+	border: 1px solid #CDCDCD;
+	box-shadow: -2px 2px 7px #CCCCCC;
+}
+.productb a {
+	text-decoration: none;
+}
+.productb p {
+	margin: 0px;
+}
+.productb img {
+	display: block;
+	float: left;
+	width: 30%;
+	width: 131px;
+	margin: 0px 10px 5px 0px;
+	
+	/*opacity: 0.7;
+	
+	-moz-transition: opacity 0.5s ease;
+	-webkit-transition: opacity 0.5s ease;
+	-o-transition: opacity 0.5s ease;
+	transition: opacity 0.5s ease;*/
+}
+/*.productb:hover img {
+	opacity: 1;
+}*/
+.productb img.tag, .productb img.producttag {
+	display: none;
+	float: none;
+	position: absolute;
+	top: -7px;
+	right: -7px;
+	width: 110px;
+	height: 110px;
+	margin: 0px;
+}
+.productb h4 {
+	margin: 0px 0px 5px;
+}
+.productb p.descrip {
+	margin-bottom: 5px;
+	
+	color: #666;
+}
+.productb ul.features {
+	padding-left: 170px;
+}
+.productb ul.features li {
+	margin: 2px 0px 0px;
+}
+.productb div.info {
+	position: relative;
+	clear: both;
+	margin: 5px -1px 0px;
+	padding: 5px 0px 0px;
+	border-top: 1px dashed #EAEAEA;
+}
+.productb div.info p.view, .productb div.info a.view {
+	float: right;
+	
+	margin: 0px;
+	padding: 5px 15px;
+	border: 1px solid #416BB5;
+	
+	background-color: #4b75bf;
+	color: #FFF;
+	text-decoration: none;
+	border-radius: 3px;
+	box-shadow: 0px 0px 0px #FFF;
+	
+	-moz-transition: box-shadow 0.5s ease, opacity 0.5s ease,color 0.5s ease,border-color 0.5s ease,background-color 0.5s ease;
+	-webkit-transition: box-shadow 0.5s ease, opacity 0.5s ease,color 0.5s ease,border-color 0.5s ease,background-color 0.5s ease;
+	-o-transition: box-shadow 0.5s ease, opacity 0.5s ease,color 0.5s ease,border-color 0.5s ease,background-color 0.5s ease;
+	transition: box-shadow 0.5s ease, opacity 0.5s ease,color 0.5s ease,border-color 0.5s ease,background-color 0.5s ease;
+	
+	background-color: #F0F0F0;
+	border: 1px solid #DDD;
+	color: #333;
+}
+.productb div.info p.view:hover, .productb div.info a.view:hover {
+	border: 1px solid #315BA5;
+	background-color: #416BB5;
+	
+	background-color: #0099CC;
+	border: 1px solid #4b75bf;
+	
+	border: 1px solid #416BB5;
+	background-color: #4b75bf;
+	
+	color: #FFF;
+	box-shadow: 0px 0px 10px #AAA;
+}
+.productb div.info p.status {
+	/*position: absolute;
+	top: -25px;
+	right: 0px;
+	margin: 0px;
+	padding: 0px;
+	
+	font-size: 1.2em;*/
+	
+	float: right;
+	margin: 0px 15px;
+	padding: 5px 0px;
+	
+	/*color: #3CD120;*/
+	color: #333;
+}
+.productb div.info .stockIn {
+	color: #6BC206;
+}
+.productb div.info .stockOut {
+	color: #D62B0B;
+}
+.productb div.info p.price {
+	font-size: 1.5em;
+}
+.productb p.retailpricemark {
+	clear: left;
+}
+.productb table.pricebreaks {
+	width: 100%;
+}
+.productb div.info table.pricebreaks {
+	width: 100%;
+}
+
+/* Legacy */
+.productb .price {
+	clear: left;
+	float: left;
+}
+.productb a.buynow {
+	float: right;
+	height: 38px;
+	
+}
+.productb a.buynow img {
+	width: auto;
+	height: 38px;
+	margin: 0px;
+}

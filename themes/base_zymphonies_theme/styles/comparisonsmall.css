@@ -1,0 +1,169 @@
+@charset "utf-8";
+/* CSS Document */
+
+/* comparisonsmall table */
+table.comparisonsmall {
+	position: relative;
+	width: 100%;
+	margin: 1em 0px;
+	border: 0px;
+	padding: 0px;
+}
+table.comparisonsmall tr {
+	overflow: visible;
+}
+table.comparisonsmall th {
+	background-color: #E2EDF1;
+	overflow: visible;
+}
+table.comparisonsmall td {
+	text-align: center;
+}
+/* thead */
+table.comparisonsmall thead {
+	z-index: 0;
+}
+table.comparisonsmall thead tr {
+}
+table.comparisonsmall thead th {
+	padding-top: 1em;
+	
+	font-size: 1em;
+	text-align: center;
+	
+	-moz-border-radius-topleft: 20px;
+	-webkit-border-top-left-radius: 20px;
+	-o-border-radius-topleft: 20px;
+	border-top-left-radius: 20px;
+	
+	-moz-border-radius-topright: 20px;
+	-webkit-border-top-right-radius: 20px;
+	-o-border-radius-topright: 20px;
+	border-top-right-radius: 20px;
+}
+table.comparisonsmall thead td {
+}
+/* tbody */
+table.comparisonsmall tbody {
+	z-index: 1;
+	border-bottom: 1px solid #B5D0DB;
+}
+table.comparisonsmall tbody tr {
+	border-top: 1px solid #B5D0DB;
+	border-bottom: 0px;
+}
+table.comparisonsmall tbody tr:hover td {
+	background-color: #F0F0F0;
+}
+table.comparisonsmall tbody th {
+	padding: 1em 5px;
+	font-weight: 600;
+	text-align: left;
+}
+table.comparisonsmall tbody td {
+	padding: 1em 5px;
+	border: 1px solid #B5D0DB;
+	background-color: rgba(255, 255, 255, 0);
+}
+/* tfoot */
+table.comparisonsmall tfoot {
+	z-index: 0;
+}
+table.comparisonsmall tfoot tr {
+	border: none;
+}
+table.comparisonsmall tfoot th {
+	padding-bottom: 1em;
+	
+	font-size: 1.2em;
+	text-align: center;
+	
+	-moz-border-radius-bottomleft: 20px;
+	-webkit-border-bottom-left-radius: 20px;
+	border-bottom-left-radius: 20px;
+	
+	-moz-border-radius-bottomright: 20px;
+	-webkit-border-bottom-right-radius: 20px;
+	border-bottom-right-radius: 20px;
+}
+table.comparisonsmall tfoot td {
+}
+/* Sub Table */
+table.comparisonsmall tbody tr.subtable {
+	border: none;
+}
+table.comparisonsmall tbody tr.subtable th, table.comparisonsmall tbody tr.subtable td {
+	padding: 0.5em 5px;
+}
+table.comparisonsmall tbody tr.subtable th {
+	text-align: right;
+}
+table.comparisonsmall tbody tr.subtable td {
+	border-bottom: 0px;
+}
+table.comparisonsmall tbody tr.subtable + tr.subtable td {
+	border-top: 1px solid #E2EDF1;
+}
+table.comparisonsmall tbody tr.subtable h1, 
+table.comparisonsmall tbody tr.subtable h2, 
+table.comparisonsmall tbody tr.subtable h3, 
+table.comparisonsmall tbody tr.subtable h4,
+table.comparisonsmall tbody h1 {
+	float: left;
+	margin: 0px;
+	margin-right: 30%;
+	/*margin-bottom: -100%;*/
+	padding: 0px;
+	border: 0;
+	
+	text-align: left;
+	font-size: 14px;
+	font-weight: 600;
+	color: #555;
+	text-shadow: none;
+}
+table.comparisonsmall tbody tr.subtable .legend,
+table.comparisonsmall tbody .legend {
+	float: left;
+	clear: left;
+	margin: 5px 30% -30% 1em;
+	z-index: 5;
+	
+	background-color: #FFFFFF;
+	padding: 3px 1em;
+	border: 1px solid #B5D0DB;
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+	border-radius: 3px;
+	
+	text-align: left;
+	font-size: 0.9em;
+	font-weight: lighter;
+	color: #333;
+	line-height: 22px;
+}
+table.comparisonsmall tbody tr.subtable .legend:before,
+table.comparisonsmall tbody .legend:before {
+	display: block;
+	content: "Legend";
+	margin: 0px 0px 2px;
+	text-decoration: underline;
+	font-weight: 600;
+}
+
+table.comparisonsmall a {
+	display: block;
+	width: 100%;
+	height: 100%;
+	text-decoration: none;
+}
+table.comparisonsmall a:hover {
+	text-decoration: underline;
+}
+table.comparisonsmall .footnote {
+	display: inline-block;
+	width: 0px !important;
+	overflow: visible;
+	margin-left: 5px;
+	margin-right: -5px;
+}

@@ -1,0 +1,26 @@
+solwise_page_scrapes.page_scrape_type.*:
+  type: config_entity
+  label: 'Page scrape type config'
+  mapping:
+    id:
+      type: string
+      label: 'ID'
+    label:
+      type: label
+      label: 'Label'
+    uuid:
+      type: string
+
+field.field_settings.html_scrape:
+  type: mapping
+  label: 'HTML Scrape settings'
+  mapping:
+    start_marker:
+      type: string
+      label: 'Start marker'
+    end_marker:
+      type: string
+      label: 'End marker'
+    rows:
+      type: integer
+      label: 'Rows'

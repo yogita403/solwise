@@ -1,0 +1,173 @@
+@import "variables-and-mixins";
+
+@media (min-width: 767px) {
+
+  /*flexslider*/
+
+  .flexslider {
+
+    h2{
+      font-size: 2em;
+    }
+
+    .slider-caption{
+      display: block;
+    }
+
+    .flex-direction-nav{
+      display: block;
+      margin-top: -24px;
+    }
+
+  }
+
+  .top-menu{
+    padding: 0;
+    text-align: left;
+  }
+  
+  .testimonials-wrap{
+    padding: 75px 0 55px;
+  }
+
+  .address-wrap,
+  .region-homepagemessage,
+  .topwidget-,
+  .path-frontpage .content_layout,
+  .footerwidget,
+  .path-frontpage .bottom-widgets{
+    padding: 40px 0;
+  }
+
+  .topwidget{
+    .region{
+      border-right: 1px dotted #ddd;
+    }
+  }
+  
+  .copyright{
+    p{ margin: 10px 0; }
+  }
+
+  .footerwidget img.left{
+    float: left;
+    margin: 10px 10px 0 0;
+  }
+
+  .region-primary-menu{
+    display: inline-block !important;
+    float: right;
+    width: auto;
+    margin: 0;
+
+    ul{
+      border: 0;
+
+      ul{
+        background: $menuDropDownBg;
+
+        li a,
+        li a:hover,
+        li a:focus,
+        li a:active,
+        li a.highlighted{
+          padding: 12px 15px;
+        }   
+      }      
+    }
+
+    li{
+      border: 0;
+
+      a{
+        background: none;
+        border: 0;
+        color: #fff;
+
+        span.sub-arrow {
+          padding: 0;
+          top: 20px;
+          margin-top: 0;
+          bottom: 2px;
+          right: 5px;
+          margin-left: -5px;
+          left: auto;
+          width: 0;
+          height: 0;
+          border-width: 5px;
+          border-style: solid;
+          border-color: #848484 transparent transparent transparent;
+          font-size: 2em;
+          line-height: 100%;
+        }
+      }
+
+      &.active a{
+        background: none;
+        color: $menuTextActiveColor;
+      }
+    }
+  }
+
+  .carousel-caption p,
+  .carousel-caption h3{
+    display: block;
+  }
+
+  .carousel-caption p:last-child{
+    margin: 0;
+  }
+
+  .carousel-caption{
+    background-color: #fff;
+    background: rgba(0, 0, 0, 0.84);
+    color: #ddd;
+    text-shadow: none;
+    padding: 20px;
+    top: 20%;
+    left: 10%;
+    bottom: auto;
+    width: 30%;
+    text-align: left;
+  }
+
+  .credit-link{
+    text-align: right;
+  }
+
+  .social-media{
+    float: right;
+
+    a{
+      margin: 0 0 0 10px;
+    }
+  }
+
+  /*comment*/
+
+  .comment-wrap{
+
+    .author-details{ width: 10%; }
+
+    .author-comments{ width: 90%; }
+
+  }
+
+
+  .region-top-menu{
+    margin: 10px 0;
+
+    ul{
+      text-align: right;
+    }
+  }
+
+  .region-contact-email{
+    p{
+      margin: 10px 0;
+      line-height: 120%;
+      font-size: 2em;
+    }
+  }
+
+}

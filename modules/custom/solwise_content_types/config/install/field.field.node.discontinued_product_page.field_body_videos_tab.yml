@@ -1,0 +1,26 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_body_videos_tab
+    - node.type.discontinued_product_page
+  module:
+    - solwise_page_scrapes
+id: node.discontinued_product_page.field_body_videos_tab
+field_name: field_body_videos_tab
+entity_type: node
+bundle: discontinued_product_page
+label: 'Body Videos Tab'
+description: ''
+required: true
+translatable: false
+default_value:
+  -
+    html: "<div class=\"content\">\r\n<div class=\"video\"><img align=\"right\" alt=\"Solwise Video\" onclick=\"MM_openBrWindow('video-homeplug-internet-around-the-home.html','SolwiseVideo','resizable=yes,width=480,height=390')\" src=\"images/homeplug-around-the-home.jpg\" width=\"204\" />\r\n<h3><span class=\"product\">Get the internet throughout your home</span></h3>\r\n\r\n<hr /></div>\r\n\r\n<div class=\"video\"><img align=\"right\" alt=\"Solwise Video\" onclick=\"MM_openBrWindow('homeplug-internet-tv.html','SolwiseVideo','resizable=yes,width=480,height=390')\" src=\"images/homeplug-tv-internet.jpg\" width=\"210\" />\r\n<h3><span class=\"product\">Get your Internet Ready TV online</span></h3>\r\n\r\n<hr /></div>\r\n\r\n<div class=\"video\"><img align=\"right\" alt=\"Solwise Video\" onclick=\"MM_openBrWindow('video-homeplug-animated.html','SolwiseVideo','resizable=yes,width=411,height=345')\" src=\"images/video-homeplug-animated.jpg\" />\r\n<h3><span class=\"product\">Introduction to home plug </span></h3>\r\n\r\n<p>home plug, an introduction</p>\r\n\r\n<hr /></div>\r\n</div>\r\n"
+    created: null
+default_value_callback: ''
+settings:
+  start_marker: '<!-- InstanceBeginEditable name="videos" -->'
+  end_marker: '<!-- InstanceEndEditable -->'
+  rows: 8
+field_type: html_scrape

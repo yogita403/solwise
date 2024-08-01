@@ -1,0 +1,310 @@
+/*nav li {
+	margin: 0px;
+}
+nav li>ul, nav td>ul {
+	z-index: 1;
+}
+nav li:hover, nav td:hover,
+nav li:hover>ul, nav td:hover>ul,
+nav li:hover>ul *, nav td:hover>ul * {
+	z-index: 100 !important;
+}*/
+nav#sidemenu {
+	z-index: 100;
+	border: 1px solid #DDD;
+	border-top-color: #DDD;
+	border-right: 0px;
+	background: linear-gradient(top, #241f49,#5f70b1);
+	background: -webkit-linear-gradient(top, #EEE 0%, #D0D8E9 100%);
+}
+nav#sidemenu ul {
+	list-style: none;
+	display: block;
+	margin: 0px;
+	padding: 0px;
+}
+nav#sidemenu li {
+	position: relative;
+	display: block;
+	width: 100%;
+}
+nav#sidemenu li+li {
+	border-top: 1px solid #AAA;
+	
+}
+nav#sidemenu a {
+	display: block;
+	height: 100%;
+	padding: 0px 1em 0px 1em;
+	
+	background: rgba(0,0,0,0);
+	color: #333;
+	text-decoration: none;
+	
+	-moz-transition: all 0.5s ease;
+	-webkit-transition: all 0.5s ease;
+	-o-transition: all 0.5s ease;
+	transition: all 0.5s ease;
+}
+nav#sidemenu ul ul {
+}
+nav#sidemenu li.hasChildren:after {
+	content: ">";
+	position: absolute;
+	top: 0px;
+	right: 0px;
+	display: block;
+	height: 100%;
+	margin-right: 5px;
+	
+	line-height: 100%;
+	color: #DDD;
+	font-weight: bold;
+	
+	text-shadow: 0px 0px 2px #999;
+	
+	-moz-transition: all 0.5s ease;
+	-webkit-transition: all 0.5s ease;
+	-o-transition: all 0.5s ease;
+	transition: all 0.5s ease;
+}
+nav#sidemenu li.hasChildren:hover:after {
+	color: #666;
+	opacity: 0;
+}
+nav#sidemenu li.selected.hasChildren:after {
+	content: "";
+	display: none;
+}
+
+nav#sidemenu>ul>li.hasChildren:after {
+	font-size: 14px;
+	line-height: 26px;
+	color: #999;
+}
+nav#sidemenu>ul>li.hasChildren:hover:after {
+	color: #666;
+}
+
+nav#sidemenu>ul>li li.hasChildren:after {
+	font-size: 14px;
+	line-height: 26px;
+	color: #FFF;
+	text-shadow: 0px 0px 2px #FFF;
+}
+nav#sidemenu>ul>li li.hasChildren:hover:after {
+	color: #FFF;
+}
+
+
+/*
+ * Top level
+ */
+nav#sidemenu>ul>li>a {
+	/*font-size: 18px;
+	line-height: 30px;*/
+	line-height: 26px;
+}
+nav#sidemenu>ul>li>a:hover, nav#sidemenu>ul>li:hover>a {
+	background-color: #444;
+	background-color: rgba(68,68,68,0.8);
+	color: #FFF;
+}
+nav#sidemenu li:hover>ul {
+	/*display: block;*/
+}
+nav#sidemenu>ul>li:first-child, nav#sidemenu>ul>li:first-child>a {
+	border-radius: 9px 0px 0px 0px;
+}
+nav#sidemenu>ul>li:last-child, nav#sidemenu>ul>li:last-child>a {
+	border-radius: 0px 0px 0px 9px;
+}
+
+/*
+ * Sub levels
+ */
+nav#sidemenu>ul>li ul {
+	display: none;
+	position: absolute;
+	top: -1px;
+	left: 100%;
+	min-width: 250px;
+	border: 1px solid #EEE;
+	background-color: #fff;
+	
+	box-shadow: 1px 1px 10px #999;
+}
+nav#sidemenu>ul>li li {
+	border-color: #EEE;
+}
+nav#sidemenu>ul>li> ul li {
+	
+}
+nav#sidemenu>ul>li> ul li a {
+	line-height: 26px;
+}
+nav#sidemenu>ul>li> ul li a:hover, nav#sidemenu>ul>li> ul li:hover>a {
+	background-color: #999;
+	background-color: rgba(153,153,153,0.8);
+	color: #FFF;
+}
+
+/*
+ * Selected
+ */
+nav#sidemenu>ul>li.selected {
+	background-color: #FFFFFF;
+	background-color: rgba(255,255,255,0.9);
+}
+nav#sidemenu>ul>li.selected>a {
+	
+}
+nav#sidemenu>ul>li.selected>ul>li.hasChildren:after {
+	color: #666;
+	text-shadow: 0px 0px 2px #666;
+}
+nav#sidemenu>ul>li.selected>ul>li.selected>ul>li.hasChildren:after {
+	color: #666;
+	text-shadow: 0px 0px 2px #666;
+}
+nav#sidemenu li.selected {
+	
+}
+nav#sidemenu li.selected>a {
+	
+}
+nav#sidemenu li.selected>ul {
+	min-width: 0;
+	box-shadow: none;
+}
+nav#sidemenu li.selected>ul {
+	display: block;
+	position: relative;
+	top: auto;
+	left: auto;
+	border: 0px;
+	padding: 0px 0px 0px 1.5em;
+	background: none;
+}
+nav#sidemenu li.selected>ul>li {
+	border-color: #EEE;
+}
+nav#sidemenu li.selected>ul>li>a {
+	
+}
+nav#sidemenu li.selected.actual>a {
+	background-color: #666;
+	background-color: rgba(102,102,102,0.8);
+	color: #FFF;
+}
+
+
+
+
+
+
+
+
+/*
+ * Menu Styling
+ */
+
+
+
+/*
+ * Black menu
+ */
+/* Main Side menu background */
+nav#sidemenu {
+	position: relative;
+	border: 1px solid #666;
+	/*border-top-color: #DDD;*/
+	
+	background: none;
+	background-color: #555;
+	border-radius: 10px 0px 0px 10px;
+	opacity: 0.95;
+}
+/* Menu item separator */
+nav#sidemenu li+li {
+	border-top: 1px solid #999;
+}
+/* Menu item link */
+nav#sidemenu a {
+	background: rgba(0,0,0,0);
+	color: #FFF;
+}
+
+/* Top level hover */
+nav#sidemenu>ul>li>a:hover, nav#sidemenu>ul>li:hover>a {
+	background-color: #FFF;
+	background-color: rgba(255,255,255,0.8);
+	
+	color: #222;
+}
+
+/* Sub menu lists */
+nav#sidemenu>ul>li ul {
+	border: 1px solid #BBB;
+	background-color: #999;
+	background-color: rgba(153, 153, 153, 0.95);
+	
+	box-shadow: 1px 1px 10px #999;
+}
+/* Sub menu item separators */
+nav#sidemenu>ul>li li {
+	border-color: #BBB;
+}
+/* Sub menu links */
+nav#sidemenu>ul>li> ul li a {
+	color: #222;
+	color: #FFF;
+}
+/* Sub menu hover */
+nav#sidemenu>ul>li> ul li a:hover, nav#sidemenu>ul>li> ul li:hover>a {
+	background-color: #666;
+	background-color: rgba(85,85,85,0.8);
+	color: #FFF;
+}
+
+/* (Top-level) Selected section background */
+nav#sidemenu>ul>li.selected {
+	/*background: linear-gradient(top, #EEE, #D0D8E9);*/
+	background: linear-gradient(to bottom, #EEE, #D0D8E9);
+	background: -webkit-linear-gradient(top, #EEE 0%, #D0D8E9 100%);
+	
+	color: #222;
+}
+/* (Top-level) Selected link */
+nav#sidemenu>ul>li.selected>a {
+	background: none;
+	font-weight: bold;
+	color: #222;
+}
+nav#sidemenu>ul>li.selected>a:hover, nav#sidemenu>ul>li.selected:hover>a {
+	background: none;
+	color: #222;
+}
+nav#sidemenu li.selected>ul>li>a {
+	color: #222;
+}
+nav#sidemenu li.selected>a:hover, nav#sidemenu li.selected:hover>a,
+nav#sidemenu li.selected>ul>li>a:hover, nav#sidemenu li.selected>ul>li:hover>a {
+	background-color: #999;
+	background-color: rgba(153,153,153,0.8);
+	color: #FFF;
+}
+/* Selected links */
+nav#sidemenu li.selected>a {
+	font-weight: bold;
+}
+/* Selected section list separator */
+nav#sidemenu li.selected>ul>li {
+	border-color: #CCE;
+}
+/* Actual selected item */
+nav#sidemenu li.selected.actual>a {
+	background-color: #666 !important;
+	background-color: rgba(102,102,102,0.8) !important;
+	color: #FFF !important;
+}

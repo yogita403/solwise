@@ -1,0 +1,7 @@
+name: 'Product Categories'
+type: module
+# core: 8.x
+core_version_requirement: ^8.8 || ^9 || ^10
+dependencies:
+  - taxonomy
+package: 'Solwise Features'

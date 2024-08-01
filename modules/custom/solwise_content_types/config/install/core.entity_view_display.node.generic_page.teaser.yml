@@ -1,0 +1,33 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.generic_page.field_body_content
+    - field.field.node.generic_page.field_body_page_heading
+    - field.field.node.generic_page.field_head_additional_tags
+    - field.field.node.generic_page.field_head_menumember
+    - field.field.node.generic_page.field_head_pageconfig
+    - field.field.node.generic_page.field_head_title
+    - field.field.node.generic_page.field_old_html_source
+    - field.field.node.generic_page.field_old_url
+    - node.type.generic_page
+  module:
+    - user
+id: node.generic_page.teaser
+targetEntityType: node
+bundle: generic_page
+mode: teaser
+content:
+  links:
+    weight: 100
+    region: content
+hidden:
+  field_body_content: true
+  field_body_page_heading: true
+  field_head_additional_tags: true
+  field_head_menumember: true
+  field_head_pageconfig: true
+  field_head_title: true
+  field_old_html_source: true
+  field_old_url: true

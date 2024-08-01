@@ -1,0 +1,24 @@
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:178a0e3d-b8ac-42e5-90f3-f711fb47eb3b'
+  module:
+    - block_content
+  theme:
+    - base_zymphonies_theme
+id: cardimage
+theme: base_zymphonies_theme
+region: footer_sixth
+weight: 0
+provider: null
+plugin: 'block_content:178a0e3d-b8ac-42e5-90f3-f711fb47eb3b'
+settings:
+  id: 'block_content:178a0e3d-b8ac-42e5-90f3-f711fb47eb3b'
+  label: 'Card image'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

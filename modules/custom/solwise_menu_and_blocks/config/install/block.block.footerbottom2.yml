@@ -1,0 +1,24 @@
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:ccea9381-d7f9-4b64-b80a-f65e6cc083ea'
+  module:
+    - block_content
+  theme:
+    - base_zymphonies_theme
+id: footerbottom2
+theme: base_zymphonies_theme
+region: footer_second
+weight: -10
+provider: null
+plugin: 'block_content:ccea9381-d7f9-4b64-b80a-f65e6cc083ea'
+settings:
+  id: 'block_content:ccea9381-d7f9-4b64-b80a-f65e6cc083ea'
+  label: 'Footer bottom Contact US'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

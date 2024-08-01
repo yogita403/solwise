@@ -1,0 +1,68 @@
+/*
+ * Blocks are a layout composition component
+ * They are intended to be stacked on top of each other and divide the page accordingly
+ */
+
+.block {
+    display: block;
+    clear: both;
+
+    border-top: 1px solid transparent;
+    border-bottom: 1px solid transparent;
+
+    padding: 2em 0;
+
+    &.block-spacious {
+        padding: 4em 0;
+    }
+
+    &.block-page-heading {
+        background: linear-gradient(180deg, #0684c0 0%, #22d1e1 100%);
+    }
+}
+
+
+
+/*
+ * Overrides for certain page positions
+ */
+section.main {
+    > .block {
+        margin-left: -20px;
+        margin-right: -20px;
+
+        &:first-child {
+            margin-top: -50px;
+        }
+        &:last-child {
+            margin-bottom: -20px;
+        }
+    }
+    header#pageHeader + .block {
+        margin-top: -23px;
+
+        + .page_heading {
+            margin-top: 0;
+        }
+    }
+    .page_heading + .block {
+        margin-top: -20px;
+    }
+}
+
+/*
+ * Overrides for children
+ */
+section.main > .block {
+    .block-text {
+        padding: 0 2em;
+        > p {
+            margin: 0 0 1em;
+            text-align: justify;
+
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+    }
+}

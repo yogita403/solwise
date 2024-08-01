@@ -1,0 +1,84 @@
+.btn {
+    display: inline-block;
+
+    text-decoration: none;
+
+
+
+
+
+
+
+    /*
+     * Sizes
+     */
+
+    padding: 5px 1em;
+    border-radius: 3px;
+    font-size: 1em;
+
+    &.btn-lg {
+        padding: 10px 1.5em;
+        border-radius: 5px;
+        //font-size: 1.2em;
+    }
+
+
+    /*
+     * Styles
+     */
+
+    border: 1px solid #ddd;
+    background: #fff;
+    color: #666;
+
+    &:hover, &:focus {
+        border-color: #bbb;
+        background: #ddd;
+        color: #111;
+    }
+
+
+    &.btn-primary {
+        //border-color: #6080cb;
+        //background: #669BEB;
+
+        border-color: #4b75bf;
+        //background: #669BEB;
+        background: #4E78C2;
+        color: rgba(255, 255, 255, 1);
+
+        &:hover, &:focus {
+            //background: #4b75bf;
+            background: #325DA7;
+
+            color: rgba(255, 255, 255, 0.8);
+        }
+    }
+
+    &.btn-success {
+        border-color: #388E3C;
+        background: #4CAF50;
+        color: rgba(255, 255, 255, 1);
+
+        &:hover, &:focus {
+            background: #388E3C;
+            color: rgba(255, 255, 255, 0.8);
+        }
+    }
+
+
+    &.btn-on-purple {
+        //border-color: #6080cb;
+        //background: #669BEB;
+
+        border-color: #3f5486;
+        background: #596da9;
+        color: rgba(255, 255, 255, 0.8);
+
+        &:hover, &:focus {
+            background: #2c8af9;
+            color: rgba(255, 255, 255, 1);
+        }
+    }
+}

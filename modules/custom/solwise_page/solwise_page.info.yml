@@ -1,0 +1,6 @@
+name: Solwise Pages
+type: module
+description: ''
+configure: solwise_page.collection
+# core: '8.x'
+core_version_requirement: ^8.8 || ^9 || ^10

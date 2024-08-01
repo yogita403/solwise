@@ -1,0 +1,38 @@
+# ignore drupal core files
+/core
+/vendor
+/modules/contrib
+/sites/development.services.yml
+/sites/example.settings.local.php
+/sites/example.sites.php
+/sites/README.txt
+/images
+/sites/*/files
+/profiles
+/themes/contrib
+/pma
+/media
+/includes
+
+# configuration files
+/sites/*/settings.php
+/sites/*/default.settings.php
+/sites/*/default.services.yml
+/sites/php_errorlog
+
+# other files
+/INSTALL.txt
+/README.md
+/README.txt
+/robots.txt
+/glossary.xml
+/example.gitignore
+/dealerfinder.html
+/composer.phar
+/.eslintrc.json
+/.gitattributes
+/.eslintignore
+/.editorconfig
+/.csslintrc
+/web.config
+/.htaccess

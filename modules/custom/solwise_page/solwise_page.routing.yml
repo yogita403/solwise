@@ -1,0 +1,9 @@
+solwise_page.indexpage:
+  path: '/solwiseindexpage'
+  defaults:
+    _controller: '\Drupal\solwise_page\Controller\SolwisePage::indexPage'
+    _title: 'Index Page'
+  requirements:
+    _permission: 'access content'
+
+

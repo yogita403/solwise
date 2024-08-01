@@ -1,0 +1,14 @@
+name: Migrate Wordpress
+description: 'Contains migrations from wordpress blog.'
+package: Migrations
+type: module
+core_version_requirement: ^8 || ^9 || ^10
+dependencies:
+  - drupal:migrate
+  - drupal:migrate_drupal
+  - migrate_manifest:migrate_manifest
+
+# Information added by Drupal.org packaging script on 2021-09-24
+version: '8.x-3.0'
+project: 'wp_migrate'
+datestamp: 1632470562

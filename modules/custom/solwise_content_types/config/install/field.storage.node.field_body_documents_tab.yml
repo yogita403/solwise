@@ -1,0 +1,19 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - solwise_page_scrapes
+id: node.field_body_documents_tab
+field_name: field_body_documents_tab
+entity_type: node
+type: html_scrape
+settings:
+  format: '0'
+module: solwise_page_scrapes
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

@@ -1,0 +1,26 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_body_reviews_tab
+    - node.type.discontinued_product_page
+  module:
+    - solwise_page_scrapes
+id: node.discontinued_product_page.field_body_reviews_tab
+field_name: field_body_reviews_tab
+entity_type: node
+bundle: discontinued_product_page
+label: 'Body Reviews Tab'
+description: ''
+required: true
+translatable: false
+default_value:
+  -
+    html: "<div class=\"externalarticle\"><img alt=\"1\" src=\"images/press-logos/expert-reviews.gif\" width=\"237\" /><img alt=\"1\" src=\"images/press-logos/expert-reviews-best-buy.gif\" width=\"150\" /> <a href=\"http://www.expertreviews.co.uk/powerline-networking/1286926/solwise-net-pl-500av-piggy\" target=\"_new\"><img alt=\"1\" src=\"images/buttons/link-article.png\" /></a>\r\n<h3>Expert Reviews</h3>\r\n\r\n<p>16 Sept 2011<br />\r\n5/5 stars</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p>'We were impressed with Netgear's AV+ 500 kit, but a pair of Solwise's NET-PL-500AV-PIGGY adaptors is even faster at just over half the price. It's definitely a Best Buy. '</p>\r\n</div>\r\n"
+    created: null
+default_value_callback: ''
+settings:
+  start_marker: '<!-- InstanceBeginEditable name="reviews" -->'
+  end_marker: '<!-- InstanceEndEditable -->'
+  rows: 8
+field_type: html_scrape

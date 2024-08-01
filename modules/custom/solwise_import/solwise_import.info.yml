@@ -1,0 +1,10 @@
+name: Solwise Import
+description: Import content to node from HTML.
+type: module
+package: Solwise
+# core: '8.x'
+core_version_requirement: ^8.8 || ^9 || ^10
+# project: 'solwise_import'
+dependencies:
+  - solwise_content_types
+# version: '1.X'

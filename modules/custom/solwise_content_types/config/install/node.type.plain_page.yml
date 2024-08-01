@@ -1,0 +1,16 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+name: 'Plain page'
+type: plain_page
+description: 'Page based on the ''plainpage'' template (has page content section only). Similar to ''Basic page''.'
+help: ''
+new_revision: true
+preview_mode: 1
+display_submitted: false

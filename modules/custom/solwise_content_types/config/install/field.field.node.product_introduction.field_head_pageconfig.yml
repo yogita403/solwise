@@ -1,0 +1,26 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_head_pageconfig
+    - node.type.product_introduction
+  module:
+    - solwise_page_scrapes
+id: node.product_introduction.field_head_pageconfig
+field_name: field_head_pageconfig
+entity_type: node
+bundle: product_introduction
+label: 'Head pageConfig'
+description: ''
+required: true
+translatable: true
+default_value:
+  -
+    html: "<script type=\"text/javascript\" id=\"pageConfigScript\">\r\n\t\t/* \r\n\t\t * Enter the StockCode (in quotes) of the product this page is associated with, or null. E.g.,\r\n\t\t * page.associateWithStock(\"SOME-STOCKCODE\");\r\n\t\t */\r\n\t\tpage.associateWithStock(\"PL-HL115EP\");\r\n\t</script>"
+    created: null
+default_value_callback: ''
+settings:
+  start_marker: '<!-- InstanceBeginEditable name="pageConfig" -->'
+  end_marker: '<!-- InstanceEndEditable -->'
+  rows: 8
+field_type: html_scrape

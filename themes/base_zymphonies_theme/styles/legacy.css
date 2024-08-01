@@ -1,0 +1,135 @@
+a:link
+{
+	color: #0099CC; 
+}
+a:visited
+{
+	color: #0099CC; 
+} 
+a:active 
+{
+	color: #0099CC;
+}
+table
+{
+	margin: 0px;
+}
+h1
+{
+	color: #0099CC;
+	font-size: 10px;
+}
+h2
+{
+	color: #0099CC;
+	font-size: 12px;
+}
+h3
+{
+	color: #0099CC;
+	font-size: 14px;
+}
+h4
+{
+	color: #0099CC;
+	font-size: 16px;
+}
+h5
+{
+	color: #0099CC;
+	font-size: 18px;
+}
+h6
+{
+	color: #0099CC;
+	font-size: 24px;
+}
+.bodyHeadings {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 16px;
+	font-style: normal;
+	font-weight: bold;
+	color: #000000;
+}
+.body {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	font-style: normal;
+	font-weight: normal;
+	color: #000000;
+}
+.BodySmall {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	color: #000000;
+}
+.BodySmallHeadings {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	font-weight: bold;
+	color: #000000;
+}
+.StockBoxHeadings {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	font-weight: bold;
+	color: #FFFFFF;
+}
+.StockBoxStockCode {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	font-weight: bold;
+	color: #000000;
+}
+.StockBoxPrice {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	font-weight: bold;
+	color: #000000;
+}
+.StockBoxStockStatus {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	font-weight: bold;
+	color: #000000;
+}
+.StockBoxNotes {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	font-weight: normal;
+	color: #000000;
+}
+.SpecTableHeading {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	font-weight: bold;
+	color: #FFFFFF;
+}
+.SpecTableSubHeading {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	font-weight: bold;
+	color: #000000;
+}
+.SpecTableContent {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	font-weight: normal;
+	color: #000000;
+}
+.AbrstractContent {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	font-weight: normal;
+	color: #000000;
+}
+table.solwisetable {
+	border-width: 1px;
+	border-spacing: 1px;
+	border-style: solid;
+	border-color: #cccccc;
+	border-collapse: collapse;
+	background-color: white;
+	padding: 5px;
+}
+

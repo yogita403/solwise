@@ -1,0 +1,10 @@
+solwise_page.main:
+  version: VERSION
+  css:
+    theme:
+      css/solwise_page.css: {}
+  js:
+    js/solwise_page.js: {}
+  dependencies:
+    - core/jquery
+    - core/drupalSettings

@@ -1,0 +1,58 @@
+<article role="article" class="node node--type-product-index node--view-mode-full">
+   <div class="node__content">
+      <div>
+         <p>{{pages.page_heading}}</p>
+      </div>
+      <div class="gallery" id="product_filter">
+         <!-- Tabbed list -->
+         {% if pages.filter_action == 'OR' %}
+            <p class="tabTitle">Filter products: </p>
+            <ul class="tabbedList lowprofile smallertext" id="filterORButton">
+               {% if pages['filters'] is not empty %}
+               <li class="filter-li"><span data-filter="*" class="active">Show All</span></li>
+               {% endif %}
+               {% for filters in pages['filters'] %}
+               <li class="filter-li"><span data-filter=".{{filters.property_name|lower|replace({' ': '-', '/': '-'})}}">{{filters.property_name|lower|replace({' ': '-', '/': '-'})}}</span></li>
+               {% endfor %}
+            </ul>
+         {% elseif pages.filter_action == 'AND' %}
+            <p class="tabTitle">Filter products: </p>
+            <ul class="tabbedList lowprofile smallertext" id="filterButton">
+            {% for filters in pages['filters'] %}
+            <span class="button-checkbox">
+               <button type="button" class="btn" data-color="primary">{{filters.property_name|lower|replace({' ': '-', '/': '-'})}}</button>
+               <input type="checkbox" name="{{filters.property_name|lower|replace({' ': '-', '/': '-'})}}" value=".{{filters.property_name|lower|replace({' ': '-', '/': '-', '(': '', ')': ''})}}" id="{{filters.property_name|lower|replace({' ': '-', '/': '-'})}}" class="hidden" data-key="{{filters.keyFilter}}">
+             </span>
+               {% endfor %}
+            </ul>
+         {% endif %}
+         <div class="title indexTitle" id="{{pages.page_heading}}" style="visibility: visible; display: block;">{{pages.page_heading}}</div>
+         {% for productDetails in pages['productDetails'] %}
+         {% set wrapper_attr = create_attribute() %} 
+         {% set wrapper_attr = wrapper_attr.addClass('productb') %}
+         {% for filterVal in pages['filterVal'][loop.index0] %}
+         {% set wrapper_attr = wrapper_attr.addClass(filterVal.property_name|lower|replace({' ': '-', '/': '-', '(': '', ')': ''})) %}       
+         {% endfor %}
+         {% set wrapper_attr = wrapper_attr.addClass(classes) %}
+         <div {{ wrapper_attr }} >
+         <a href="{{ productDetails.URL }}"><img alt="{{ productDetails.Code }}" class="thumb" src="{{ pages['imageURL'][loop.index0][0].image_path }}" /> </a>
+         <h4>{{ productDetails.Name }}</h4>
+         <!-- <h4><a href="{{ productDetails.URL }}">{{ productDetails.Name }}</a></h4> -->
+         <a href="{{ productDetails.URL }}"> </a>
+         <p class="mfrcode">{{ productDetails.Code }}</p>
+         <ul class="features">
+            {% for bulletPoints in pages['bulletPoints'][loop.index0] %}
+            <li>{{ bulletPoints.bulletHTML }}</li>
+            {% endfor %}
+         </ul>
+         <div class="info">
+            <a class="view" href="{{ productDetails.URL }}">View Product </a>
+            <script>Stock("{{ productDetails.Code }}");</script>
+            <p class="price">
+               <script>Price("{{ productDetails.Code }}");</script>
+            </p>
+         </div>
+      </div>
+      {% endfor %}
+   </div>
+</article>

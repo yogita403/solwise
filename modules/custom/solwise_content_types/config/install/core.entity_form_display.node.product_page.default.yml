@@ -1,0 +1,201 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.product_page.field_associated_stockcode
+    - field.field.node.product_page.field_body_accessories_tab
+    - field.field.node.product_page.field_body_content
+    - field.field.node.product_page.field_body_documents_tab
+    - field.field.node.product_page.field_body_downloads_tab
+    - field.field.node.product_page.field_body_imageviewer
+    - field.field.node.product_page.field_body_keyaccessories
+    - field.field.node.product_page.field_body_overview_tab
+    - field.field.node.product_page.field_body_reviews_tab
+    - field.field.node.product_page.field_body_specifications_tab
+    - field.field.node.product_page.field_body_videos_tab
+    - field.field.node.product_page.field_head_additional_tags
+    - field.field.node.product_page.field_head_menumember
+    - field.field.node.product_page.field_head_pageconfig
+    - field.field.node.product_page.field_head_title
+    - field.field.node.product_page.field_old_html_source
+    - field.field.node.product_page.field_old_url
+    - field.field.node.product_page.field_product_brand
+    - field.field.node.product_page.field_product_category
+    - node.type.product_page
+  module:
+    - link
+    - path
+    - solwise_page_scrapes
+id: node.product_page.default
+targetEntityType: node
+bundle: product_page
+mode: default
+content:
+  created:
+    type: datetime_timestamp
+    weight: 2
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_associated_stockcode:
+    weight: 10
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_body_accessories_tab:
+    weight: 24
+    settings: {  }
+    third_party_settings: {  }
+    type: html_scrape_w
+    region: content
+  field_body_content:
+    weight: 15
+    settings: {  }
+    third_party_settings: {  }
+    type: html_scrape_w
+    region: content
+  field_body_documents_tab:
+    weight: 22
+    settings: {  }
+    third_party_settings: {  }
+    type: html_scrape_w
+    region: content
+  field_body_downloads_tab:
+    weight: 20
+    settings: {  }
+    third_party_settings: {  }
+    type: html_scrape_w
+    region: content
+  field_body_imageviewer:
+    weight: 16
+    settings: {  }
+    third_party_settings: {  }
+    type: html_scrape_w
+    region: content
+  field_body_keyaccessories:
+    weight: 17
+    settings: {  }
+    third_party_settings: {  }
+    type: html_scrape_w
+    region: content
+  field_body_overview_tab:
+    weight: 18
+    settings: {  }
+    third_party_settings: {  }
+    type: html_scrape_w
+    region: content
+  field_body_reviews_tab:
+    weight: 21
+    settings: {  }
+    third_party_settings: {  }
+    type: html_scrape_w
+    region: content
+  field_body_specifications_tab:
+    weight: 19
+    settings: {  }
+    third_party_settings: {  }
+    type: html_scrape_w
+    region: content
+  field_body_videos_tab:
+    weight: 23
+    settings: {  }
+    third_party_settings: {  }
+    type: html_scrape_w
+    region: content
+  field_head_additional_tags:
+    weight: 14
+    settings: {  }
+    third_party_settings: {  }
+    type: html_scrape_w
+    region: content
+  field_head_menumember:
+    weight: 13
+    settings: {  }
+    third_party_settings: {  }
+    type: html_scrape_w
+    region: content
+  field_head_pageconfig:
+    weight: 12
+    settings: {  }
+    third_party_settings: {  }
+    type: html_scrape_w
+    region: content
+  field_head_title:
+    weight: 11
+    settings: {  }
+    third_party_settings: {  }
+    type: html_scrape_w
+    region: content
+  field_old_html_source:
+    weight: 7
+    settings: {  }
+    third_party_settings: {  }
+    type: html_scrape_source_w
+    region: content
+  field_old_url:
+    weight: 6
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+    type: link_default
+    region: content
+  field_product_brand:
+    weight: 9
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: entity_reference_autocomplete
+    region: content
+  field_product_category:
+    weight: 8
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: entity_reference_autocomplete
+    region: content
+  path:
+    type: path
+    weight: 5
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  promote:
+    type: boolean_checkbox
+    settings:
+      display_label: true
+    weight: 3
+    region: content
+    third_party_settings: {  }
+  sticky:
+    type: boolean_checkbox
+    settings:
+      display_label: true
+    weight: 4
+    region: content
+    third_party_settings: {  }
+  title:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  uid:
+    type: entity_reference_autocomplete
+    weight: 1
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+    region: content
+    third_party_settings: {  }
+hidden: {  }

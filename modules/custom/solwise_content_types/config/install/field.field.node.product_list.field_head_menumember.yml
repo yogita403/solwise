@@ -1,0 +1,26 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_head_menumember
+    - node.type.product_list
+  module:
+    - solwise_page_scrapes
+id: node.product_list.field_head_menumember
+field_name: field_head_menumember
+entity_type: node
+bundle: product_list
+label: 'Head menuMember'
+description: ''
+required: true
+translatable: true
+default_value:
+  -
+    html: "<script type=\"text/javascript\">\r\n\t\t\t/*\r\n\t\t\t * Enter (between the brackets below, in quote marks) the filename of the page you wish to have highlighted for this page.\r\n\t\t\t * \r\n\t\t\t * Only necessary for pages that do not appear directly in the menu (such as product pages)\r\n\t\t\t * It's recommended that the filename of the index page to which this page belongs is entered\r\n\t\t\t * E.g.,\r\n\t\t\t * sideMenu.currentPageBelongsTo(\"index.html\");\r\n\t\t\t * \r\n\t\t\t * Leave as null if not required\r\n\t\t\t */\r\n\t\t\tsideMenu.currentPageBelongsTo(\"net-powerline-500av-index.htm\");\r\n\t\t</script>"
+    created: null
+default_value_callback: ''
+settings:
+  start_marker: '<!-- InstanceBeginEditable name="menuMember" -->'
+  end_marker: '<!-- InstanceEndEditable -->'
+  rows: 8
+field_type: html_scrape

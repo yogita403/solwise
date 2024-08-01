@@ -1,0 +1,26 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_body_downloads_tab
+    - node.type.product_page
+  module:
+    - solwise_page_scrapes
+id: node.product_page.field_body_downloads_tab
+field_name: field_body_downloads_tab
+entity_type: node
+bundle: product_page
+label: 'Body Downloads Tab'
+description: ''
+required: true
+translatable: false
+default_value:
+  -
+    html: "<p>&lt;div&gt;<br />\r\n&lt;table&gt;<br />\r\n&nbsp;&nbsp; &nbsp;&lt;tbody&gt;<br />\r\n&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&lt;tr&gt;<br />\r\n&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&lt;th&gt;CE Documentation&lt;/th&gt;<br />\r\n&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&lt;td&gt;&lt;a href=\"downloads/files/pl-hl115ep-ce-documentation.zip\"&gt;Download here&lt;/a&gt;&lt;/td&gt;<br />\r\n&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&lt;td&gt;17.10.16&lt;/td&gt;<br />\r\n&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&lt;/tr&gt;<br />\r\n&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&lt;tr&gt;<br />\r\n&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&lt;th&gt;How to reset the Private Network name&lt;/th&gt;<br />\r\n&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&lt;td&gt;&lt;a href=\"downloads/files/homeplug-reset-private-network-name.pdf\"&gt;Download here&lt;/a&gt;&lt;/td&gt;<br />\r\n&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&lt;td&gt;04.03.13&lt;/td&gt;<br />\r\n&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&lt;/tr&gt;<br />\r\n&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&lt;tr&gt;<br />\r\n&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&lt;th&gt;User Manual&lt;/th&gt;<br />\r\n&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&lt;td&gt;&lt;a href=\"downloads/files/net-pl-500av-piggy-user-manual.pdf\"&gt;Download here&lt;/a&gt;&lt;/td&gt;<br />\r\n&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&lt;td&gt;11.10.11&lt;/td&gt;<br />\r\n&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&lt;/tr&gt;<br />\r\n&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&lt;tr&gt;<br />\r\n&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&lt;th&gt;Full CD Contents - please note this is a large file&lt;/th&gt;<br />\r\n&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&lt;td&gt;&lt;a href=\"downloads/files/net-pl-500-piggy-resource_cd.zip\"&gt;Download here&lt;/a&gt;&lt;/td&gt;<br />\r\n&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&lt;td&gt;11.10.11&lt;/td&gt;<br />\r\n&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&lt;/tr&gt;<br />\r\n&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&lt;tr&gt;<br />\r\n&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&lt;th width=\"590\"&gt;Power Pack Utility - for setting passwords if required. It covers all Windows operating systems only. It also shows connected home plug and the link quality.&lt;/th&gt;<br />\r\n&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&lt;td width=\"122\"&gt;&lt;a bitly=\"BITLY_PROCESSED\" href=\"downloads/files/homeplug-power_packet_utility_7-13-10.zip\"&gt;Download here&lt;/a&gt;&lt;/td&gt;<br />\r\n&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&lt;td width=\"101\"&gt;05.12.11&lt;/td&gt;<br />\r\n&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&lt;/tr&gt;<br />\r\n&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&lt;tr&gt;<br />\r\n&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&lt;th&gt;Power Packet Utility 7 Upgrade - you MUST have a previous version of Power Packet Utility installed before you install this&lt;/th&gt;<br />\r\n&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&lt;td class=\"SpecTableContent\"&gt;&lt;a href=\"downloads/files/homplug-ppu-setup.zip\"&gt;Download here&lt;/a&gt;&lt;/td&gt;<br />\r\n&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&lt;td class=\"SpecTableContent\"&gt;03.07.13&lt;/td&gt;<br />\r\n&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&lt;/tr&gt;<br />\r\n&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&lt;tr&gt;<br />\r\n&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&lt;th&gt;Home Plug Alliance Technical White Paper for Home Plug AV&lt;/th&gt;<br />\r\n&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&lt;td&gt;&lt;a bitly=\"BITLY_PROCESSED\" href=\"https://www.solwise.co.uk/downloads/files/hpav-white-paper_050818.pdf\"&gt;Download here &lt;/a&gt;&lt;/td&gt;<br />\r\n&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&lt;td&gt;&amp;nbsp;&lt;/td&gt;<br />\r\n&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&lt;/tr&gt;<br />\r\n&nbsp;&nbsp; &nbsp;&lt;/tbody&gt;<br />\r\n&lt;/table&gt;<br />\r\n&lt;/div&gt;<br />\r\n&nbsp;</p>\r\n"
+    created: null
+default_value_callback: ''
+settings:
+  start_marker: '<!-- InstanceBeginEditable name="downloads" -->'
+  end_marker: '<!-- InstanceEndEditable -->'
+  rows: 8
+field_type: html_scrape

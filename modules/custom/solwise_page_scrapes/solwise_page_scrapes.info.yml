@@ -1,0 +1,8 @@
+name: Solwise Page Scrapes
+type: module
+description: Page scrape content entities for migrating from old static site version
+# core: 8.x
+core_version_requirement: ^8.8 || ^9 || ^10
+package: Solwise
+dependencies:
+  - solwise

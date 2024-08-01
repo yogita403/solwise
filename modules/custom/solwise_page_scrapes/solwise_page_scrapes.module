@@ -1,0 +1,69 @@
+<?php
+
+/**
+ * @file
+ * Contains solwise_page_scrapes.module..
+ */
+
+use Drupal\Core\Routing\RouteMatchInterface;
+use Drupal\Core\Url;
+
+/**
+ * Implements hook_help().
+ */
+function solwise_page_scrapes_help($route_name, RouteMatchInterface $route_match) {
+  switch ($route_name) {
+    // Main module help for the solwise_page_scrapes module.
+    case 'help.page.solwise_page_scrapes':
+      $output = '';
+      $output .= '<h3>' . t('About') . '</h3>';
+      $output .= '<p>' . t('Page scrape content entities for migrating from old static site version') . '</p>';
+      return $output;
+
+    default:
+  }
+}
+
+/**
+ * Implements hook_theme().
+ */
+function solwise_page_scrapes_theme() {
+  $theme = [];
+  $theme['page_scrape'] = [
+    'render element' => 'elements',
+    'file' => 'page_scrape.page.inc',
+    'template' => 'page_scrape',
+  ];
+  $theme['page_scrape_content_add_list'] = [
+    'render element' => 'content',
+    'variables' => ['content' => NULL],
+    'file' => 'page_scrape.page.inc',
+  ];
+  return $theme;
+}
+
+/**
+* Implements hook_theme_suggestions_HOOK().
+*/
+function solwise_page_scrapes_theme_suggestions_page_scrape(array $variables) {
+  $suggestions = array();
+  $entity = $variables['elements']['#page_scrape'];
+  $sanitized_view_mode = strtr($variables['elements']['#view_mode'], '.', '_');
+
+  $suggestions[] = 'page_scrape__' . $sanitized_view_mode;
+  $suggestions[] = 'page_scrape__' . $entity->bundle();
+  $suggestions[] = 'page_scrape__' . $entity->bundle() . '__' . $sanitized_view_mode;
+  $suggestions[] = 'page_scrape__' . $entity->id();
+  $suggestions[] = 'page_scrape__' . $entity->id() . '__' . $sanitized_view_mode;
+  return $suggestions;
+}
+
+// Deprecated: page scrape types no longer used
+/*function solwise_page_scrapes_toolbar_alter(&$items) {
+  $links = [
+    'type' => 'link',
+    'title' => 'Old Site Page Scrapes',
+    'url' => Url::fromRoute('entity.page_scrape.collection'),
+  ];
+  array_push($items['solwise']['tray']['solwise_tray']['#links'], $links);
+}*/

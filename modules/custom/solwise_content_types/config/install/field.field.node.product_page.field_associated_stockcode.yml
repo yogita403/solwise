@@ -1,0 +1,18 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_associated_stockcode
+    - node.type.product_page
+id: node.product_page.field_associated_stockcode
+field_name: field_associated_stockcode
+entity_type: node
+bundle: product_page
+label: 'Associated StockCode'
+description: 'The stockcode(s) displayed on this product page. Can be more than one.'
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

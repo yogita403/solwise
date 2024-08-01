@@ -1,0 +1,16 @@
+# Page scrape menu items definition
+entity.page_scrape.collection:
+  title: 'Page scrape list'
+  route_name: entity.page_scrape.collection
+  description: 'List Page scrape entities'
+  parent: system.admin_structure
+  weight: 100
+
+# Page scrape type menu items definition
+entity.page_scrape_type.collection:
+  title: 'Page scrape type'
+  route_name: entity.page_scrape_type.collection
+  description: 'List Page scrape type (bundles)'
+  parent: system.admin_structure
+  weight: 99
+

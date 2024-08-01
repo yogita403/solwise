@@ -1,0 +1,23 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.about-us
+  module:
+    - system
+  theme:
+    - base_zymphonies_theme
+id: aboutus
+theme: base_zymphonies_theme
+region: footer_forth
+weight: -10
+provider: null
+plugin: 'system_menu_block:about-us'
+settings:
+  id: 'system_menu_block:about-us'
+  label: 'About Us'
+  provider: system
+  label_display: visible
+  level: 1
+  depth: 0
+visibility: {  }

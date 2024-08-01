@@ -1,0 +1,139 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.discontinued_product_page.field_associated_stockcode
+    - field.field.node.discontinued_product_page.field_body_accessories_tab
+    - field.field.node.discontinued_product_page.field_body_content
+    - field.field.node.discontinued_product_page.field_body_documents_tab
+    - field.field.node.discontinued_product_page.field_body_downloads_tab
+    - field.field.node.discontinued_product_page.field_body_imageviewer
+    - field.field.node.discontinued_product_page.field_body_keyaccessories
+    - field.field.node.discontinued_product_page.field_body_overview_tab
+    - field.field.node.discontinued_product_page.field_body_page_heading
+    - field.field.node.discontinued_product_page.field_body_reviews_tab
+    - field.field.node.discontinued_product_page.field_body_specifications_tab
+    - field.field.node.discontinued_product_page.field_body_videos_tab
+    - field.field.node.discontinued_product_page.field_head_additional_tags
+    - field.field.node.discontinued_product_page.field_head_menumember
+    - field.field.node.discontinued_product_page.field_head_pageconfig
+    - field.field.node.discontinued_product_page.field_head_title
+    - field.field.node.discontinued_product_page.field_old_html_source
+    - field.field.node.discontinued_product_page.field_old_url
+    - field.field.node.discontinued_product_page.field_product_brand
+    - field.field.node.discontinued_product_page.field_product_category
+    - node.type.discontinued_product_page
+  module:
+    - solwise_page_scrapes
+    - user
+id: node.discontinued_product_page.default
+targetEntityType: node
+bundle: discontinued_product_page
+mode: default
+content:
+  field_body_accessories_tab:
+    weight: 13
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: html_scrape_f
+    region: content
+  field_body_content:
+    weight: 5
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: html_scrape_f
+    region: content
+  field_body_documents_tab:
+    weight: 11
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: html_scrape_f
+    region: content
+  field_body_downloads_tab:
+    weight: 9
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: html_scrape_f
+    region: content
+  field_body_imageviewer:
+    weight: 4
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: html_scrape_f
+    region: content
+  field_body_keyaccessories:
+    weight: 6
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: html_scrape_f
+    region: content
+  field_body_overview_tab:
+    weight: 7
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: html_scrape_f
+    region: content
+  field_body_page_heading:
+    weight: 3
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: html_scrape_f
+    region: content
+  field_body_reviews_tab:
+    weight: 10
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: html_scrape_f
+    region: content
+  field_body_specifications_tab:
+    weight: 8
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: html_scrape_f
+    region: content
+  field_body_videos_tab:
+    weight: 12
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: html_scrape_f
+    region: content
+  field_product_brand:
+    weight: 2
+    label: visually_hidden
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  field_product_category:
+    weight: 1
+    label: visually_hidden
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  links:
+    weight: 0
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  field_associated_stockcode: true
+  field_head_additional_tags: true
+  field_head_menumember: true
+  field_head_pageconfig: true
+  field_head_title: true
+  field_old_html_source: true
+  field_old_url: true

@@ -1,0 +1,23 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_body_extracontent
+    - node.type.product_introduction
+  module:
+    - solwise_page_scrapes
+id: node.product_introduction.field_body_extracontent
+field_name: field_body_extracontent
+entity_type: node
+bundle: product_introduction
+label: 'Body Extra Content'
+description: 'A section for extra content aside from the main page content.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  start_marker: '<!-- InstanceBeginEditable name="extraContent" -->'
+  end_marker: '<!-- InstanceEndEditable -->'
+  rows: 8
+field_type: html_scrape

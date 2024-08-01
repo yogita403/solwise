@@ -1,0 +1,101 @@
+bootstrap:
+  version: 1.x
+  css:
+    theme:
+      includes/bootstrap/css/bootstrap.min.css: {}
+  js:
+    includes/bootstrap/js/bootstrap.min.js: {}
+  dependencies:
+    - core/jquery
+    - core/drupal.ajax
+    - core/drupal
+    - core/drupalSettings
+    - core/jquery.once
+
+global-components:
+  Version: 1.x
+  css:
+    theme:
+      css/global.css: {}
+      css/media.css: {}
+      css/layout.css: {}
+      css/sol-style.css: {}
+      css/marketing.css: {} # Requires flexboxgrid
+      css/nav.css: {}
+      styles/productindex.css: {}
+      css/custom.css: {}
+      css/deptlandpage.css: {}
+      css/responsive.css: {}
+  header: true
+  js:
+    js/pricefile.js: {}
+    js/custom.js: {}    
+    js/jquery.smartmenus.min.js: {}
+    js/bs-ass.js: {}
+    js/plugins.js: {}
+    js/dev.js: {}
+    js/stdata.js: {}
+    js/solwise_data.js: {}
+    #js/solwise_menudata.js: {}
+    #js/solwise_menusystem.js: {}
+    js/solwise_glossary.js: {}
+    #js/swfobject.js: {}
+    js/solwise_functions.js: {}
+    js/solwise_eventlisteners.js: {}
+    js/solwise_contentgenerators.js: {}
+    js/solwise_loadexternallibraries.js: {}
+    #js/solwise_tlscheck.js: {}
+    js/imagesloaded.pkgd.min.js: {}
+    js/isotope.pkgd.min.js: {}
+    js/html5shiv.js: {}
+    #js/main.js: {} # This is for the dealer finder
+    #js/solwise_elevationtool.js: {}
+    #js/dealerfinder.js: {}
+    #js/solwise_linkbudget.js: {}
+  dependencies:
+    - core/jquery
+    - core/drupal.ajax
+    - core/drupal
+    - core/drupalSettings
+    - core/jquery.once
+
+flexslider:
+  version: 1.x
+  css:
+    theme:
+      includes/flexslider/css/flexslider.css: {}
+  js:
+    includes/flexslider/js/jquery.flexslider-min.js: {}
+  dependencies:
+    - core/jquery
+
+fontawesome:
+  version: 1.x
+  css:
+    theme:
+      includes/fontawesome/css/font-awesome.css: {}
+
+smartmenus:
+  version: 1.x
+  css:
+    theme:
+      includes/smartmenus/sm-core-css.css: {}
+  js:
+    includes/smartmenus/jquery.smartmenus.min.js: {}
+  dependencies:
+    - core/jquery
+
+google-map:
+  header: true
+  js:
+    https://www.google.com/jsapi: { type: external, minified: true}
+    https://maps.googleapis.com/maps/api/js?key=AIzaSyCN8WHfaAwKVyR2-L69rbc7LP1uYT7F5Ik: { type: external, minified: true }
+    js/solwise_elevationtool.js: {}
+
+linkbudget:
+  css:
+    theme:
+      css/solwise_linkbudget.css: {}
+  js:
+    js/math.min.js: {}
+    js/solwise_linkbudget.js: {}

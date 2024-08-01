@@ -1,0 +1,125 @@
+/*Header*/
+
+.main-header {
+	background-size: cover;
+	position: relative;
+	background: $headerBGColor;
+	padding: 5px 0;
+	border-bottom: 1px solid #f7f7f7;
+
+  	nav{
+	  background: none;
+	  border: 0;
+	  margin: 0;
+	  position: relative;
+	  min-height: auto;
+	  border-radius: 0;
+	}
+
+	.region{
+	  position: relative;
+	}
+
+	.block{
+	  margin: 0;
+	}
+}
+
+
+/*Region Header*/
+
+.site-branding{
+	margin: 0;
+}
+
+.brand.logo{
+	margin-right: 3px;
+}
+
+.region-header .brand{
+	display: inline-block;
+	vertical-align: middle;
+	color: $headerTextColor;
+	line-height: 120%;
+	font-size: 1.3em;
+
+	a{
+		color: $headerTextColor;
+	}
+
+	.site-branding__slogan{
+		font-size: .7em;
+	}
+}
+
+.region-contact-email{
+
+	.block{
+		margin: 5px 0;
+	}
+	
+	p{
+		margin: 0;
+		line-height: 120%;
+		/*font-size: 2em;*/
+	}
+}
+
+
+/*Search Form*/
+
+.search-block-form{
+	margin: 0 auto;
+}
+
+.region-search{
+	clear: both;
+	padding: 6px 0;
+}
+
+#search-block-form{
+	display: table;
+	width: 100%;
+
+	.form-item, 
+	.form-actions{
+		display: table-cell;
+		vertical-align: top;
+	}
+
+	input.form-submit{
+		background: image-url("search.png") no-repeat center $linkColorHover;
+		font-size: 0;
+		width: 100%;
+		height: 30px;
+		vertical-align: top;
+	}
+
+	input{
+		width: 100%;
+		height: 30px;
+	}
+}
+
+
+/*Breadcrumb*/
+
+.breadcrumb{
+	font-size: .85em;
+	padding: 3px 10px;
+	margin: 0;
+	background: #fff;
+	display: inline-block;
+
+	ul{
+		padding: 0;
+		margin: 0;
+
+			li{
+				display: inline-block;
+				&:last-child span{
+					display: none;
+			}
+		}
+	}
+}

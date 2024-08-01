@@ -1,0 +1,20 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_old_html_source
+    - node.type.generic_page
+  module:
+    - solwise_page_scrapes
+id: node.generic_page.field_old_html_source
+field_name: field_old_html_source
+entity_type: node
+bundle: generic_page
+label: 'Old HTML Source'
+description: 'Optional: The entire HTML of the source page from the old website'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: html_scrape_source

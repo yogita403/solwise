@@ -1,0 +1,241 @@
+* {
+	/*Transition effect*/
+	-moz-transition: all 0.5s ease;
+	-webkit-transition: all 0.5s ease;
+	-o-transition: all 0.5s ease;
+	transition: all 0.5s ease;
+}
+body {
+	padding: 0px;
+	margin: 0px;
+	font-family: "Lucida Grande", "Lucida Sans Unicode", "Verdana", "sans-serif";
+	font-size: 12px;
+	color: #222222;
+	background-color: #EAEAEA;
+}
+#wrapper {
+	position: relative;
+	width: 1000px;
+	left: 50%;
+	margin: 0px;
+	margin-left: -500px;
+	border: 0px;
+	padding: 0px 10px;
+	text-align: left;
+	background-color: #FFFFFF;
+	
+	/*CSS 3*/
+	box-shadow: 0px 0px 20px #222222;
+	-moz-box-shadow: 0px 0px 20px #222222;
+	-webkit-box-shadow: 0px 0px 20px #222222;
+}
+header {
+	background: none;
+}
+#header {
+	z-index: 0;
+	position: relative;
+	rem width: 100%;
+	height: 110px;
+	rem height: 50px;
+	margin: 0px;
+	border: 0px;
+	padding: 0px 5px;
+	rem background: #FFFFFF url('../images/header_grad.png') repeat-x bottom left;
+	rem background-color: #EAEAEA;
+}
+#flashBanner {
+	z-index: -1;
+	display: block;
+	rem height: 110px;
+	width: 500px;
+	margin: 0px auto;
+	border: 0px;
+	rem overflow: hidden;
+}
+#header img {
+	z-index: 1;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	margin: 8px 0px;
+}
+#header a {
+	color: #0099CC;
+}
+#header .links {
+	position: absolute;
+	right: 0px;
+	top: 0px;
+	rem bottom: 45;
+	height: 25px;
+	padding: 2px 0px;
+	text-align: right;
+}
+#header .outlinks {
+	position: absolute;
+	right: 0px;
+	top: 25px;
+	height: 25px;
+	padding: 2px 0px;
+}
+#footer {
+	margin: 20px 0px 0px 0px;
+	padding: 10px;
+	border-top: 1px dotted #B7BBC1;
+	text-align: center;
+}
+
+/*Menus*/
+#topmenu * {
+	/*Transition effect overide*/
+	-moz-transition: all 0s ease;
+	-webkit-transition: all 0s ease;
+	-o-transition: all 0s ease;
+	transition: all 0s ease;
+}
+#topmenu td {
+	/*Transition effect*/
+	-moz-transition: all 0.5s ease;
+	-webkit-transition: all 0.5s ease;
+	-o-transition: all 0.5s ease;
+	transition: all 0.5s ease;
+}
+#topmenu {
+	position: relative;
+	top: 0px;
+	left: -10px;
+	width: 1020px;
+	rem width: 100%;
+	height: 38px;
+	margin: 0px 0px 5px 0px;
+	rem padding: 0px 1px;
+	padding: 0px;
+	border: 0px;
+	background: #000000 url('../images/menu_grad.png') repeat-x top left;
+	rem overflow: hidden;
+}
+#topmenu div {
+	margin: 0px;
+	border: 0px;
+	padding: 0px;
+}
+#topmenu img {
+	vertical-align: middle;
+}
+.sidemenu * {
+	/*Transition effect overide*/
+	-moz-transition: all 0s ease;
+	-webkit-transition: all 0s ease;
+	-o-transition: all 0s ease;
+	transition: all 0s ease;
+}
+.sidemenu td {
+	/*Transition effect*/
+	-moz-transition: all 0.5s ease;
+	-webkit-transition: all 0.5s ease;
+	-o-transition: all 0.5s ease;
+	transition: all 0.5s ease;
+}
+.sidemenu {
+	float: left;
+	position: relative;
+	top: -136px;
+	left: -10px;
+	width: 140px;
+	margin: 0px 0px -136px 0px;
+	padding: 20px 0px 0px 0px;
+	background: #1D2328 url('../images/sidemenu_grad.png') repeat-y top left;
+	
+	border-top-right-radius: 20px;
+	-moz-border-radius-topright: 20px;
+	-webkit-border-top-right-radius: 20px;
+}
+.sidemenu img {
+	max-width: 6px;
+	margin: 0px;
+	padding: 0px;
+	vertical-align: middle;
+}
+/*End Menus*/
+
+/*2 Column layout format*/
+.page_container {
+	position: relative;
+	width: 1000px;
+	margin: 0px;
+	padding: 0px;
+	padding-top: 131px;
+	
+	rem background-color: red;
+}
+.main {
+	z-index: -1;
+	float: right;
+	width: 860px;
+	margin: 0px;
+	border: 0px;
+	padding: 0px;
+	rem overflow: hidden;
+	
+	rem background-color: blue;
+}
+.side {
+	float: left;
+	position: relative;
+	width: 130px;
+	rem margin: 5px 10px 5px 0px;
+	margin: 0px;
+	border: 0px;
+	padding: 0px;
+	text-align: left;
+	rem overflow: hidden;
+	
+	rem background-color: green;
+}
+.page_heading {
+	rem z-index: -1;
+	position: absolute;
+	top: -5px;
+	left: -10px;
+	height: 41px;
+	width: 850px;
+	padding: 40px 20px 40px 150px;
+	margin-bottom: 0px;
+	background: #FFFFFF url('../images/pageheading_grad.png') repeat-x top left;
+	vertical-align: middle;
+	line-height: 40px;
+	font-size: 40px;
+	color: #FFFFFF;
+	text-shadow: #CCCCCC 0px 0px 8px, #EFEFEF -0.3em -0.2em 0.4em, #E5E5E5 1em 0.7em 0.2em, #E0E0E0 -0.5em 0.3em 0.1em, #DDDDDD 0.6em -0.6em 0.2em;
+	text-shadow: #FFFFFF 0px 0px 8px;
+}
+	
+.page_heading img {
+	position: absolute;
+	top: 3px;
+	right: 20px;
+}
+
+.side img {
+	max-width: 100%;
+	margin: 5px auto;
+}
+
+/*Parent div used for different column widths on front page*/
+.frontpage_container {
+	position: relative;
+	width: 1000px;
+	margin: 5px 0px;
+	padding: 0px 0px;
+	
+	rem background-color: red;
+}
+.frontpage_container .main {
+	float: left;
+	width: 700px;
+}
+.frontpage_container .side {
+	float: right;
+	width: 290px;
+}

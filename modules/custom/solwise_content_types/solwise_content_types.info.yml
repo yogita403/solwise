@@ -1,0 +1,18 @@
+name: 'Solwise Content Types'
+description: 'Node content types corresponding to the old solwise.co.uk site page types'
+type: module
+# core: 8.x
+core_version_requirement: ^8.8 || ^9 || ^10
+dependencies:
+  - comment
+  - field
+  - link
+  - menu_ui
+  - node
+  - path
+  - solwise_features_product_brands
+  - solwise_features_product_categories
+  - solwise_page_scrapes
+  - taxonomy
+  - user
+package: 'Solwise Features'

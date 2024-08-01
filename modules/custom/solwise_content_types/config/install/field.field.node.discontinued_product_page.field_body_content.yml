@@ -1,0 +1,26 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_body_content
+    - node.type.discontinued_product_page
+  module:
+    - solwise_page_scrapes
+id: node.discontinued_product_page.field_body_content
+field_name: field_body_content
+entity_type: node
+bundle: discontinued_product_page
+label: 'Body content'
+description: 'The main content section'
+required: true
+translatable: false
+default_value:
+  -
+    html: "<h3>PL-HL115EP</h3>\r\n\r\n<p>Aztech 500AV home plug Adapter with mains passthrough</p>\r\n\r\n<ul>\r\n\t<li>Filtered mains passthrough socket</li>\r\n\t<li>High Performance Atheros/Intellon AR7400 chipset</li>\r\n\t<li>Link Quality Colour LED</li>\r\n\t<li>Perfect for ultra-high speed High Definition entertainment network in your home</li>\r\n\t<li>Great for areas that are hard to reach by wireless connections</li>\r\n\t<li>Will work with your existing 200AV network</li>\r\n\t<li>IEEE1901 / home plug AV standard</li>\r\n\t<li>Gigabit Ethernet Port</li>\r\n\t<li>Security push button for software free configuration - Push, Plug and Play</li>\r\n\t<li>1 network cable included</li>\r\n\t<li>2 year warranty</li>\r\n\t<li>Direct replacement for the NET-PL-500AV-PIGGY</li>\r\n</ul>\r\n<!-- Product info and buy it now divs -->\r\n\r\n<div class=\"productInfo\">\r\n<div class=\"buyitnow\"><script language=\"JavaScript\" type=\"text/javascript\"> Price(\"PL-HL115EP\") </script>\r\n<p class=\"stockstatus\"><script language=\"JavaScript\" type=\"text/javascript\" class=\"StockBoxStockStatus\">Stock(\"PL-HL115EP\")</script></p>\r\n<a href=\"https://secure.solwise.co.uk/trolley.php?NewStockCode=PL-HL115EP\" target=\"_new\"><img alt=\"Buy Now\" onmouseout=\"this.src='images/buynow.png';\" onmouseover=\"this.src='images/buynow_hover.png';\" src=\"images/buynow.png\" /></a></div>\r\n\r\n<h3>PL-HL115EP</h3>\r\n\r\n<p>Single Pack</p>\r\n</div>\r\n"
+    created: null
+default_value_callback: ''
+settings:
+  start_marker: '<!-- InstanceBeginEditable name="content" -->'
+  end_marker: '<!-- InstanceEndEditable -->'
+  rows: 8
+field_type: html_scrape

@@ -1,0 +1,96 @@
+<?php
+
+/**
+ * @file
+ * Contains solwise.module..
+ */
+
+use Drupal\Core\Routing\RouteMatchInterface;
+use Drupal\Core\Url;
+
+/**
+ * Implements hook_help().
+ */
+function solwise_help($route_name, RouteMatchInterface $route_match) {
+  switch ($route_name) {
+    // Main module help for the solwise module.
+    case 'help.page.solwise':
+      $output = '';
+      $output .= '<h3>' . t('About') . '</h3>';
+      $output .= '<p>' . t('Solwise general module') . '</p>';
+      return $output;
+
+    default:
+  }
+}
+
+/**
+ * Implements hook_toolbar().
+ */
+function solwise_toolbar() {
+  $items = [];
+  /*$items['solwise'] = [
+    '#cache' => [
+      'contexts' => [
+        'user.permissions',
+      ],
+    ],
+  ];*/
+
+  if(!\Drupal::currentUser()->hasPermission('administer solwise')) {
+    //return $items;
+  }
+
+  $items['solwise'] = [
+    '#type' => 'toolbar_item',
+    'tab' => [
+      '#type' => 'link',
+      '#title' => t('Solwise'),
+      '#url' => Url::fromRoute('page_scrape.add_page'),
+      '#options' => [
+        'attributes' => [
+          'title' => t('Solwise'),
+        ],
+      ],
+      '#attributes' => [
+        'class' => ['toolbar-icon', 'toolbar-icon-help'],
+        'aria-pressed' => 'false',
+      ],
+    ],
+    'tray' => [
+      '#heading' => t('Solwise admin actions'),
+      'solwise_tray' => [
+        '#theme' => 'links__toolbar_shortcuts',
+        '#links' => [],
+        '#attributes' => [
+          'class' => ['toolbar-menu']
+        ],
+      ],
+    ],
+    '#weight' => 150,
+  ];
+
+  /*$items['solwise'] = [
+  '#type' => 'toolbar_item',
+    'tab' => [
+    '#type' => 'html_tag',
+    '#tag' => 'button',
+    '#value' => t('Solwise'),
+    '#attributes' => [
+      'class' => ['toolbar-icon', 'toolbar-icon-help'],
+      'aria-pressed' => 'false',
+    ],
+  ],
+    '#wrapper_attributes' => [
+    'class' => ['solwise-toolbar-tab', 'hidden'],
+    'id' => 'toolbar-tab-solwise',
+  ],
+//    '#attached' => [
+//      'library' => [
+//        'solwise/solwise',
+//      ],
+//    ],
+  ];*/
+  return $items;
+}
+

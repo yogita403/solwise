@@ -1,0 +1,35 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.product_introduction.field_body_familydescription
+    - field.field.node.product_introduction.field_body_page_heading
+    - field.field.node.product_introduction.field_body_product_index
+    - field.field.node.product_introduction.field_head_additional_tags
+    - field.field.node.product_introduction.field_head_menumember
+    - field.field.node.product_introduction.field_head_pageconfig
+    - field.field.node.product_introduction.field_head_title
+    - field.field.node.product_introduction.field_old_html_source
+    - field.field.node.product_introduction.field_old_url
+    - node.type.product_introduction
+  module:
+    - user
+id: node.product_introduction.teaser
+targetEntityType: node
+bundle: product_introduction
+mode: teaser
+content:
+  links:
+    weight: 100
+    region: content
+hidden:
+  field_body_familydescription: true
+  field_body_page_heading: true
+  field_body_product_index: true
+  field_head_additional_tags: true
+  field_head_menumember: true
+  field_head_pageconfig: true
+  field_head_title: true
+  field_old_html_source: true
+  field_old_url: true

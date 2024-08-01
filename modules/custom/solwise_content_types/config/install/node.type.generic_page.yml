@@ -1,0 +1,16 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+name: 'Generic page'
+type: generic_page
+description: 'Page based on the ''generic'' template (has [blue] page heading and main content sections)'
+help: ''
+new_revision: true
+preview_mode: 1
+display_submitted: false

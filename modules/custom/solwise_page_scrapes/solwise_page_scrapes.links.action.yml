@@ -1,0 +1,11 @@
+entity.page_scrape.add_form:
+  route_name: 'page_scrape.add_page'
+  title: 'Add Page scrape'
+  appears_on:
+    - entity.page_scrape.collection
+entity.page_scrape_type.add_form:
+  route_name: 'entity.page_scrape_type.add_form'
+  title: 'Add Page scrape type'
+  appears_on:
+    - entity.page_scrape_type.collection
+

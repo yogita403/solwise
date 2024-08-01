@@ -1,0 +1,7 @@
+solwise_import.html_import:
+  path: '/admin/solwise-import-html'
+  defaults:
+    _form: '\Drupal\solwise_import\Form\ImportForm'
+    _title: 'Import HTML content'
+  requirements:
+   _permission: 'administer site configuration'

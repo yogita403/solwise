@@ -1,0 +1,23 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_body_page_heading
+    - node.type.solutions_page
+  module:
+    - solwise_page_scrapes
+id: node.solutions_page.field_body_page_heading
+field_name: field_body_page_heading
+entity_type: node
+bundle: solutions_page
+label: 'Body Page Heading'
+description: 'The page heading with a blue background'
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  start_marker: '<!-- InstanceBeginEditable name="pageHeading" -->'
+  end_marker: '<!-- InstanceEndEditable -->'
+  rows: 4
+field_type: html_scrape

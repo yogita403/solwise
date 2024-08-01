@@ -1,0 +1,23 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_body_familydescription
+    - node.type.solutions_page
+  module:
+    - solwise_page_scrapes
+id: node.solutions_page.field_body_familydescription
+field_name: field_body_familydescription
+entity_type: node
+bundle: solutions_page
+label: 'Body FamilyDescription'
+description: 'The intro content area under the blue page header but above the actual index/content. Can be used to describe the type of products on the page, or have an ''On this page'' menu.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  start_marker: '<!-- InstanceBeginEditable name="familyDescription" -->'
+  end_marker: '<!-- InstanceEndEditable -->'
+  rows: 8
+field_type: html_scrape

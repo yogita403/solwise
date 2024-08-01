@@ -1,0 +1,104 @@
+<div class="socialButtons">
+    <fb:like 
+        send="false" 
+        layout="button_count" 
+        width="100" 
+        show_faces="false">
+    </fb:like>
+    <div class="g-plusone" data-size="medium"></div>
+    <a href="https://twitter.com/share" class="twitter-share-button">Tweet</a>
+</div>
+<div class="usersession_container">
+    <div class="usersession">
+        <div id="signin">
+            <a href="https://secure.solwise.co.uk/login.php" id="rs_signin_link" class="rs_signin">
+                <script type="text/javascript">document.write(rsToken.getSignInString());</script>
+            </a>
+            <div id="rs_signin_form">
+                <div class="preloader">
+                    <img src="/images/preloader.gif" />
+                    Please wait while we sign you in...
+                </div>
+                <a href="#" id="rs_signin_exit">x</a>
+                <p class="header">
+                    EXISTING USERS<br />
+                    <span class="note">Sign in by entering your details below<br /><small>(Optional: not needed to place orders)</small></span>
+                </p>
+                <p id="rs_signin_error"></p>
+                <form name="login" action="https://secure.solwise.co.uk/login.php" method="post">
+                    <label for="rs_signin_username">Username or Email Address</label>
+                    <input type="text" name="authenticationUsername" id="rs_signin_username" class="dashstyle" />
+                    <label for="rs_signin_password">Password</label>
+                    <input type="password" name="authenticationPassword" id="rs_signin_password" class="dashstyle" />
+                    <input type="checkbox" name="authenticationPersist" id="rs_signin_persist" value="1" class="stylised" />
+                    <label for="rs_signin_persist"><span></span>Remember Me?</label>
+                    <input type="submit" name="authentication" value="Sign In" id="rs_signin_submit" class="dashstyle" />
+                </form>
+            </div>
+        </div>
+        <div id="trolleypreview">
+            <div id="trolley_hint">
+                Item has been added!
+            </div>
+            <a id="trolley_summary">
+                <div class="trolleyicon">
+                    <img src="/images/trolleypreview.png" />
+                    <span class="trolleycount rs_trolley_itemcount" length="3">---</span>
+                </div>
+                <span class="trolleytotal rs_trolley_subtotal">loading</span>
+                <img src="/images/downarrow.png" class="expandicon" />
+            </a>
+            <div id="trolleycontents">
+                <div class="preloader">
+                    <img src="/images/preloader.gif" />
+                    Please wait while we process your request...
+                </div>
+                <a href="#" id="rs_trolley_exit">x</a>
+                <p id="trolley_itemcount"><strong class="rs_trolley_itemcount" length="3">---</strong> ITEMS IN YOUR TROLLEY</p>
+                <div id="trolley_quickadd" class="selfclearfix">
+                    <form name="trolley_quickadd" id="trolley_quickadd_form" class="selfclearfix" action="https://secure.solwise.co.uk/trolley.php" method="post">
+                        <label for="trolley_quickadd_code">Quickly add items to your trolley:</label>
+                        <div id="trolley_quickadd_textfield">
+                            <input type="text" name="stockcode" id="trolley_quickadd_code" class="dashstyle" placeholder="Enter part code" />
+                            <div id="trolley_quickadd_suggestions">
+                                <ul>
+                                </ul>
+                                <p><span id="trolley_quickadd_suggestions_count">0</span> products found</p>
+                            </div>
+                        </div>
+                        <input type="submit" value="Quick Add" id="trolley_quickadd_submit" class="dashstyle inline" />
+                        <input type="hidden" name="Submit" value="Add Product" />
+                    </form>
+                    <p id="rs_trolley_error"></p>
+                </div>
+                <div id="trolley_orderlines">
+                    <p class='trolley_orderlines_empty'>Please wait while we load your trolley...</p>
+                </div>
+                <p id="trolley_subtotal">
+                    SUBTOTAL: <strong class="rs_trolley_subtotal price">---</strong><br />
+                    <span class="note rs_trolley_incvat">(inc. VAT)</span>
+                </p>
+                <p id="trolley_shippingprompt"></p>
+                <a href="https://secure.solwise.co.uk/trolley.php" id="trolley_checkout" class="dashstyle">View Trolley &amp; Checkout</a>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- <div class="searchBar">
+  <div class="googlesearchbox">
+    <form action="https://www.google.com/cse" id="cse-search-box">
+      <input type="hidden" name="cx" value="011642428835913833663:b0ml4fq0mbk" />
+      <input type="hidden" name="ie" value="UTF-8" />
+      <input type="text" name="q" size="20" placeholder="Search The Site" />
+      <input type="image" src="/images/magglass_dark.png" name="sa" value="Search" />
+      <input name="siteurl" type="hidden" value="https://www.solwise.co.uk/" />
+    </form>
+  </div>
+</div> -->
+<div class="searchBar">
+<div class="googlesearchbox">
+{% if page.search %}
+    {{ page.search }}
+{% endif %}
+</div>
+</div>

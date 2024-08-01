@@ -1,0 +1,16 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+name: 'Product list'
+type: product_list
+description: 'Product list page. Uses a list format as opposed to product_index''s grid format.'
+help: ''
+new_revision: true
+preview_mode: 1
+display_submitted: false

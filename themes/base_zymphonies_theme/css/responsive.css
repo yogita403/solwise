@@ -1,0 +1,150 @@
+.RightSection{ width:204px; float:right;}
+.RightSection > input , .RightSection > textarea, .RightSection > select{    width: 100%;}
+@media screen and (min-width: 767px) {
+.lableCustom {    display: inline-block;    vertical-align: middle;	width:206px;}
+}
+
+@media screen and (max-width: 1280px) {
+#container { min-width:100%;  width:98%;}	
+}
+
+@media screen and (max-width: 1199px) {
+#container { min-width:inherit;  width:970px;}	
+.director td a, table.director input{ font-size:15px;}
+.fieldset { overflow:hidden;}
+*{ box-sizing: border-box;}
+.optiongroup .option{ height:28px;}
+table.director a{ padding:15px 10px; line-height:0px;}
+.optiongroup .option input {  margin: 5px 0 -1px;}
+.RightSection {    float: right;    width: 204px;}
+.lableCustom { width:164px;}
+.formcontrols input, .formcontrols a{ padding:5px 34px;}
+.CustmRightSidebr .legend {   margin:0;}
+.CustmRightSidebr {
+	padding:1%;
+  float: left !important;
+  width: 24.2% !important;
+}
+
+.custom-article {
+  display: inline;
+  padding: 10px;
+}
+
+
+}
+
+@media screen and (max-width: 991px) {
+#container { min-width:inherit;  width:750px;}	
+.director td a, table.director input {    font-size: 13px;}	
+
+.returnlinks {  text-align: center;  width: 50%; margin-bottom:20px !important; }
+.returnlinks > a {    display: inline-block; float:none;}
+
+.lableCustom{ width:100%;}
+.fieldset input{ float:left; width:100%;}
+.fieldset input[type="text"], .fieldset textarea, .fieldset select{ margin-left:0px;}
+
+.fieldset label {  float: left;  margin: 0 0 2px;}
+.RightSection {
+  float: none;
+  width: 100%;
+}
+
+.fieldset .option > input{ width:auto;}
+
+.controls {  float: right;  width: 50%;}
+.controls input{ margin:0px;}
+.controls .blue{ margin-bottom:15px;}
+
+.Custm-checkbox > input {  margin: 6px;}
+.fieldset textarea{ width:100%; margin-bottom:15px;}
+.fieldset  .required { margin-left:0px;}
+
+.fieldset .legend{ font-size:17px;}
+
+.CusTmLeft{ width:100% !important;}
+
+.CustmRightSidebr {  width: 32.7% !important;}
+.controls input, .controls a {
+  margin: 0;
+  text-align: center;
+  width: 100%;
+}
+
+
+}
+
+@media screen and (max-width: 767px) {
+#container {  width:auto; padding-left:15px; padding-right:15px; margin-bottom:0px;}	
+.fieldset{ width:100%; padding-left:10px; padding-right:10px;}	
+.fieldset .legend{ margin:0px 0 5px; top:inherit;}
+.optiongroup .option{ height:26px;}
+
+#footer{ padding:10px; text-align:center; margin-bottom:15px;}
+.screenblock {  display: block;  margin: 0 auto;}
+#footer a.companylogo{ text-align:center; float:none;}
+
+#footer p, #footer div#thawte{ width:100%; margin:10px 0;}
+#footer p.errorsandomissions{ position:static;}
+.Custmdropdown{ width:100% !important; margin-right:0px; margin-left:0px;}
+#header{ margin-top:5px;}
+
+.director table tr td{ width:100% !important; display:inline-block; float:left; margin:8px 0px;}
+
+.CustmRightSidebr {  width: 100% !important;}
+.Ctm-sltyar {
+    float: left;
+}
+
+.director, .backyellow {  float:none !important;  margin: 0px !important;  width: 100% !important;}
+.backyellow{ margin-top:10px !important;}
+.fieldset{ margin:10px 0px;}
+#header{ width:100%; margin:2px 0px 10px 0px;}
+.fieldset.right {  margin-left: 0px;}
+.field input.button{ height:29px;}
+
+table.director a, table.director input{ height:auto; display:block; width:100%;}
+
+}
+
+@media screen and (max-width: 540px) {
+#header .login{ position:static; height:auto;}
+.returnlinks{ width:100%;}
+.returnlinks > a{ display:block;}
+.controls {  float: right;  width: 100%;}
+}
+
+@media screen and (max-width: 500px) {
+#header .login table {  float: none;  width: 100%;}	
+}
+
+@media screen and (max-width: 480px) {
+.chckOutTable,.paragrap-text	{ width:100% !important; float:none !important;}
+.Your-Trolley {    overflow: auto; margin-bottom:0px;}
+.Your-Trolley  table{ min-width:384px; margin:15px 0px;}
+#header .login table tr th {  font-size: 10px;}
+.custom-article {  display: block;  margin-bottom: 10px;  width: 100% !important;}
+#header{ margin:2px 0px 10px 0px;}
+
+#header img.logo {
+  display: block;
+  float: none;
+  left: 0;
+  margin: 9px auto;
+  top: 0;
+}
+
+
+}
+
+@media screen and (max-width: 375px) {
+.optiongroup .option {  margin-bottom:15px; width:100%;}	
+#container {  padding-left: 5px;  padding-right: 5px;}
+#footer{  margin-bottom:5px;}
+
+}
+
+@media screen and (max-width: 340px) {
+#header .login { width: 100%;}	
+}

@@ -1,0 +1,23 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_head_additional_tags
+    - node.type.product_list
+  module:
+    - solwise_page_scrapes
+id: node.product_list.field_head_additional_tags
+field_name: field_head_additional_tags
+entity_type: node
+bundle: product_list
+label: 'Head Additional Tags'
+description: 'Any additional tags to add to the <head> section'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  start_marker: '<!-- InstanceBeginEditable name="head" -->'
+  end_marker: '<!-- InstanceEndEditable -->'
+  rows: 8
+field_type: html_scrape

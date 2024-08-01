@@ -1,0 +1,13 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.left
+    - taxonomy.vocabulary.product_category
+id: left
+label: Left
+vocabulary: product_category
+menu: left
+expanded: true
+depth: 3
+menu_parent: 'about-us:'

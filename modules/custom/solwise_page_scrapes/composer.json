@@ -1,0 +1,14 @@
+{
+  "name": "drupal/solwise_page_scrapes",
+  "type": "drupal-module",
+  "description": "Page scrape content entities for migrating from old static site version",
+  "keywords": ["Drupal"],
+  "license": "GPL-2.0+",
+  "homepage": "https://www.drupal.org/project/solwise_page_scrapes",
+  "minimum-stability": "dev",
+  "support": {
+    "issues": "http://drupal.org/project/issues/solwise_page_scrapes",
+    "source": "http://cgit.drupalcode.org/solwise_page_scrapes"
+  },
+  "require": { }
+}

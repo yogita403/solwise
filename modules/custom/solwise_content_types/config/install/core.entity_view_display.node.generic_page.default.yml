@@ -1,0 +1,47 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.generic_page.field_body_content
+    - field.field.node.generic_page.field_body_page_heading
+    - field.field.node.generic_page.field_head_additional_tags
+    - field.field.node.generic_page.field_head_menumember
+    - field.field.node.generic_page.field_head_pageconfig
+    - field.field.node.generic_page.field_head_title
+    - field.field.node.generic_page.field_old_html_source
+    - field.field.node.generic_page.field_old_url
+    - node.type.generic_page
+  module:
+    - solwise_page_scrapes
+    - user
+id: node.generic_page.default
+targetEntityType: node
+bundle: generic_page
+mode: default
+content:
+  field_body_content:
+    weight: 2
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: html_scrape_f
+    region: content
+  field_body_page_heading:
+    weight: 1
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: html_scrape_f
+    region: content
+  links:
+    weight: 0
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  field_head_additional_tags: true
+  field_head_menumember: true
+  field_head_pageconfig: true
+  field_head_title: true
+  field_old_html_source: true
+  field_old_url: true

@@ -1,0 +1,64 @@
+name: Solwise Custom Theme
+type: theme
+base theme: False
+description: 'Designed & Developed by <a href=http://www.joshics.in>Joshi Consultancy Services</a><br/>Contact us for any kind of Drupal services <a href=mailto:info@joshics.in>info@joshics.in</a>'
+package: core
+# core: 8.x
+
+#Libraries
+libraries:
+  - base_zymphonies_theme/bootstrap
+  - base_zymphonies_theme/flexslider
+  - base_zymphonies_theme/fontawesome
+  - base_zymphonies_theme/smartmenus
+  - base_zymphonies_theme/global-components
+
+#Regions
+regions:
+
+  #Header
+  header: 'Header'
+  contact_email: 'Contact email'
+  top_menu: 'Top menu'
+  primary_menu: 'Primary menu'
+  search: 'Search'
+  breadcrumb: 'Breadcrumb'
+
+  #Address
+  address: 'Address'
+
+  #Home page
+  homepagemessage: 'Home page message'
+  topwidget_first: 'Top first widget'
+  topwidget_second: 'Top second widget'
+  topwidget_third: 'Top third widget' 
+
+  #Global region
+  highlighted: 'Highlighted' 
+  page_title: 'Page title'
+  content: 'Content'
+  sidebar_first: 'Left sidebar'
+  sidebar_second: 'Right sidebar'
+
+  #Bottom widgets
+  bottom_first: 'Bottom first widget'
+  bottom_second: 'Bottom second widget'
+  bottom_third: 'Bottom third widget'
+  bottom_forth: 'Bottom forth widget'
+
+  #Footer widgets
+  footer_first: 'Footer first widget'
+  footer_second: 'Footer second widget'
+  footer_third: 'Footer third widget'
+  footer_forth: 'Footer forth widget'
+  footer_fifth: 'Footer fifth widget'
+  footer_sixth: 'Footer sixth widget'
+
+  #Footer
+  #footer_menu: 'Footer menu'
+  #google_map: 'Google map'
+  auto_hidden_block: 'Auto hidden blocks'
+# Information added by Drupal.org packaging script on 2016-11-15
+
+# core: '8.x'
+core_version_requirement: ^8.8 || ^9 || ^10

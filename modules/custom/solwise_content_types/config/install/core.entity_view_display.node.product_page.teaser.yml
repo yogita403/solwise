@@ -1,0 +1,53 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.product_page.field_associated_stockcode
+    - field.field.node.product_page.field_body_accessories_tab
+    - field.field.node.product_page.field_body_content
+    - field.field.node.product_page.field_body_documents_tab
+    - field.field.node.product_page.field_body_downloads_tab
+    - field.field.node.product_page.field_body_imageviewer
+    - field.field.node.product_page.field_body_keyaccessories
+    - field.field.node.product_page.field_body_overview_tab
+    - field.field.node.product_page.field_body_reviews_tab
+    - field.field.node.product_page.field_body_specifications_tab
+    - field.field.node.product_page.field_body_videos_tab
+    - field.field.node.product_page.field_head_additional_tags
+    - field.field.node.product_page.field_head_menumember
+    - field.field.node.product_page.field_head_pageconfig
+    - field.field.node.product_page.field_head_title
+    - field.field.node.product_page.field_old_html_source
+    - field.field.node.product_page.field_product_brand
+    - field.field.node.product_page.field_product_category
+    - node.type.product_page
+  module:
+    - user
+id: node.product_page.teaser
+targetEntityType: node
+bundle: product_page
+mode: teaser
+content:
+  links:
+    weight: 100
+    region: content
+hidden:
+  field_associated_stockcode: true
+  field_body_accessories_tab: true
+  field_body_content: true
+  field_body_documents_tab: true
+  field_body_downloads_tab: true
+  field_body_imageviewer: true
+  field_body_keyaccessories: true
+  field_body_overview_tab: true
+  field_body_reviews_tab: true
+  field_body_specifications_tab: true
+  field_body_videos_tab: true
+  field_head_additional_tags: true
+  field_head_menumember: true
+  field_head_pageconfig: true
+  field_head_title: true
+  field_old_html_source: true
+  field_product_brand: true
+  field_product_category: true

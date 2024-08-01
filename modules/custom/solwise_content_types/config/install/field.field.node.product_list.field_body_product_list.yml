@@ -1,0 +1,23 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_body_product_list
+    - node.type.product_list
+  module:
+    - solwise_page_scrapes
+id: node.product_list.field_body_product_list
+field_name: field_body_product_list
+entity_type: node
+bundle: product_list
+label: 'Body Product List'
+description: 'A list of products'
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  start_marker: '<!-- InstanceBeginEditable name="productList" -->'
+  end_marker: '<!-- InstanceEndEditable -->'
+  rows: 32
+field_type: html_scrape

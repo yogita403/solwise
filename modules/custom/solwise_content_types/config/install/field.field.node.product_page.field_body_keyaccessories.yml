@@ -1,0 +1,26 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_body_keyaccessories
+    - node.type.product_page
+  module:
+    - solwise_page_scrapes
+id: node.product_page.field_body_keyaccessories
+field_name: field_body_keyaccessories
+entity_type: node
+bundle: product_page
+label: 'Body keyAccessories'
+description: ''
+required: true
+translatable: false
+default_value:
+  -
+    html: '<script language="JavaScript" type="text/javascript">printKeyAccessories();</script>'
+    created: null
+default_value_callback: ''
+settings:
+  start_marker: '<!-- InstanceBeginEditable name="keyAccessories" -->'
+  end_marker: '<!-- InstanceEndEditable -->'
+  rows: 2
+field_type: html_scrape

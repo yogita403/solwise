@@ -1,0 +1,238 @@
+.noprint {
+	display: none !important;
+}
+
+section#body div.wrapper:after, section#body section.main:after {
+	content: ".";
+	display: block;
+	height: 0;
+	clear: both;
+	visibility: hidden;
+}
+
+/*Layout*/
+body {
+	width: 1000px;
+	margin: 0px;
+	padding: 0px;
+	background: none;
+	color: #222;
+}
+#flashBanner {
+	display: none;
+}
+header {
+	background: none !important;
+}
+header, header div.wrapper {
+	background: none !important;
+	height: 80px !important;
+}
+header .links {
+	display: none;
+}
+header .outlinks {
+	display: none;
+}
+header .googlesearchbox {
+	display: none;
+}
+#companylogo {
+	display: block !important;
+	opacity: 1 !important;
+	top: 0px;
+	left: 0px;
+	height: 80px;
+	margin: 0px;
+	padding: 0px;
+}
+#companylogo img {
+	height: 80px;
+}
+#printInfo {
+	display: block;
+	/*width: 816px;*/
+	height: 80px;
+}
+#headerContact {
+	top: 0px;
+	bottom: auto;
+	margin: 0px 0px 0px;
+}
+#headerContact p {
+	font-size: 0.9em;
+}
+nav {
+	display: none;
+}
+nav#topmenu {
+	display: none !important;
+}
+div.wrapper {
+	width: 100%;
+	margin: 0px auto;
+	padding: 0px;
+}
+div.wrapper.absolute {
+	position: relative;
+	left: auto;
+	width: 100%;
+	padding: 0px;
+}
+div.wrapper.full {
+	width: 100%;
+	padding: 0px;
+}
+div.wrapper>.side {
+	display: none;
+}
+section.side {
+}
+section.main {
+	float: right;
+	width: 100%;
+	border: 0px;
+	padding: 0px;
+	background-color: #FFF;
+}
+section#body {
+	margin-left: 30px;
+}
+section#body, section#body div.wrapper {
+	margin-top: 0px;
+}
+header#pageHeader {
+	display: none;
+}
+aside#socialFeeds {
+	display: none;
+}
+footer#siteFooter .socialFooter, footer#siteFooter .aboutUs, footer#siteFooter .learningCentreLinks {
+	display: none;
+}
+footer#siteFooter img.paymark {
+	margin: 0px;
+}
+footer#siteFooter .errorsandomissions {
+	bottom: 0px;
+}
+
+/*Image Viewer*/
+#imageViewer {
+	margin-top: 0px;
+	padding: 0px;
+}
+#imageViewer_thumbnails {
+	display: none;
+}
+#imageViewer_title {
+	opacity: 1;
+	width: 300px;
+}
+#imageViewer_clickPrompt {
+	display: none;
+}
+/*End Image Viewer*/
+
+/* Key accessories */
+.keyaccessory_left, .keyaccessory_right {
+	display: none !important;
+}
+.keyaccessory_viewport {
+	margin: 0px 35px 0px -30px !important;
+	border: 0px !important;
+	background: #FFF !important;
+	box-shadow: none !important;
+}
+/* End: Key accessories */
+
+/* Stockcards */
+.stockcard_buynow  {
+	display: none;
+}
+/* End: Stockcards */
+
+/*Tabbed Content*/
+ul.tabbedList {
+	display: none;
+}
+ul#tabbed {
+	display: none;
+}
+div.tabbedContent {
+	border: 0;
+}
+div.tabbedContent.hide {
+	display: block;
+}
+/*End Tabbed Content*/
+
+/*Product Information*/
+div.page_heading {
+	padding: 10px 20px;
+	border-bottom: 2px solid #EEE;
+	
+	background: none;
+	color: #555;
+	font-size: 3em;
+	line-height: normal;
+}
+div.page_heading img {
+	display: none;
+}
+.productInfo {
+	width: 46%;
+}
+.product {
+	margin-top: 10px !important;
+	page-break-inside: avoid;
+}
+.title {
+	page-break-after: avoid;
+}
+/*End Product Information*/
+
+/*Twitter Feed*/
+#twtr-widget-1 .twtr-timeline {
+	height: 350px !important;
+}
+#twtr-widget-1:hover .twtr-timeline {
+	height: 350px !important;
+}
+/*End Twitter Feed*/
+h1, h2, h3, h4, h5 {
+	margin-top: 0.2em;
+	margin-bottom: 0.2em;
+}
+
+/* Learning Centre */
+.socialButtons, .actionButtons {
+	display: none !important;
+}
+header#userheader, section#comments {
+	display: none !important;
+}
+/* End: Learning Centre */
+
+/* Link Budget Tool */
+#linkBudgetTool {
+
+}
+#distance-group .input-group input,
+#distance-group .input-group select {
+	border: 0;
+}
+#distance-group .input-group select {
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+}
+#distance-group .input-group label,
+#frequency .input-group label {
+	display: none;
+	border: 0;
+}
+#distance-group .input-group label.active,
+#frequency .input-group label.active {
+	display: inline-block;
+}

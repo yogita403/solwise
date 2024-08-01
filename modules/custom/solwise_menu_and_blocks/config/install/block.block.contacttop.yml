@@ -1,0 +1,24 @@
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:ec4a225f-e30a-4df6-b2de-789de44641c3'
+  module:
+    - block_content
+  theme:
+    - base_zymphonies_theme
+id: contacttop
+theme: base_zymphonies_theme
+region: contact_email
+weight: -5
+provider: null
+plugin: 'block_content:ec4a225f-e30a-4df6-b2de-789de44641c3'
+settings:
+  id: 'block_content:ec4a225f-e30a-4df6-b2de-789de44641c3'
+  label: 'Contact top'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

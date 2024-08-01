@@ -1,0 +1,23 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.the-learning-centre
+  module:
+    - system
+  theme:
+    - base_zymphonies_theme
+id: thelearningcentre
+theme: base_zymphonies_theme
+region: footer_fifth
+weight: 0
+provider: null
+plugin: 'system_menu_block:the-learning-centre'
+settings:
+  id: 'system_menu_block:the-learning-centre'
+  label: 'The Learning Centre'
+  provider: system
+  label_display: visible
+  level: 1
+  depth: 0
+visibility: {  }

@@ -1,0 +1,17 @@
+# Page scrape routing definition
+entity.page_scrape.canonical:
+  route_name: entity.page_scrape.canonical
+  base_route: entity.page_scrape.canonical
+  title: 'View'
+
+entity.page_scrape.edit_form:
+  route_name: entity.page_scrape.edit_form
+  base_route: entity.page_scrape.canonical
+  title: Edit
+
+entity.page_scrape.delete_form:
+  route_name:  entity.page_scrape.delete_form
+  base_route:  entity.page_scrape.canonical
+  title: Delete
+  weight: 10
+

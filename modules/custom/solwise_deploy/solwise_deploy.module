@@ -1,0 +1,13 @@
+<?php
+
+use Drupal\Core\Routing\RouteMatchInterface;
+use Drupal\Core\Url;
+
+function solwise_deploy_toolbar_alter(&$items) {
+  $link = [
+    'type'  => 'link',
+    'title' => 'Deploy Updates',
+    'url'   => Url::fromRoute('solwise.deploy'),
+  ];
+  $items['solwise']['tray']['solwise_tray']['#links']['deploy'] = $link;
+}

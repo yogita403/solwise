@@ -1,0 +1,24 @@
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:5696acf7-804d-469f-8d15-85ec1d296833'
+  module:
+    - block_content
+  theme:
+    - base_zymphonies_theme
+id: footerbottom3
+theme: base_zymphonies_theme
+region: footer_third
+weight: -10
+provider: null
+plugin: 'block_content:5696acf7-804d-469f-8d15-85ec1d296833'
+settings:
+  id: 'block_content:5696acf7-804d-469f-8d15-85ec1d296833'
+  label: 'Footer bottom Connect'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

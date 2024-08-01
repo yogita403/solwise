@@ -1,0 +1,12 @@
+name: 'Solwise menu and blocks'
+type: module
+# core: 8.x
+core_version_requirement: ^8.8 || ^9 || ^10
+dependencies:
+  - block
+  - block_content
+  - solwise_features_product_categories
+  - system
+  - taxonomy_menu
+  - user
+package: 'Solwise Features'

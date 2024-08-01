@@ -1,0 +1,26 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_body_imageviewer
+    - node.type.product_page
+  module:
+    - solwise_page_scrapes
+id: node.product_page.field_body_imageviewer
+field_name: field_body_imageviewer
+entity_type: node
+bundle: product_page
+label: 'Body imageViewer'
+description: 'The collection of <img> for the image viewer widget'
+required: true
+translatable: false
+default_value:
+  -
+    html: "<p><img alt=\"PL-HL115EP\" src=\"images/imageshomeplug/homeplug-av/pl-hl115ep-1.png\" /> <img alt=\"Plug View\" src=\"images/imageshomeplug/homeplug-av/pl-hl115ep-2.png\" /> <img alt=\"Ethernet Port\" src=\"images/imageshomeplug/homeplug-av/pl-hl115ep-3.png\" /> <img alt=\"Plug Dimensions\" src=\"images/imageshomeplug/homeplug-av/pl-hl115ep-4.png\" /> <img alt=\"Package contents\" src=\"images/imageshomeplug/homeplug-av/pl-hl115ep-5.png\" /></p>\r\n"
+    created: null
+default_value_callback: ''
+settings:
+  start_marker: '<!-- InstanceBeginEditable name="imageViewer" -->'
+  end_marker: '<!-- InstanceEndEditable -->'
+  rows: 8
+field_type: html_scrape

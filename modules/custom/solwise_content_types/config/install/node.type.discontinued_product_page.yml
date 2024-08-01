@@ -1,0 +1,16 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+name: 'Discontinued product page'
+type: discontinued_product_page
+description: 'Discontinued product page based on the current product page template (has imageViewer and tabs etc)'
+help: ''
+new_revision: true
+preview_mode: 1
+display_submitted: false

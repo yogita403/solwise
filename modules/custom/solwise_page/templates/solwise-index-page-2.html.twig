@@ -1,0 +1,37 @@
+<article role="article" class="node node--type-product-index node--view-mode-full">
+   <div class="node__content">
+      <div>
+         <p>{{pages.page_heading}}</p>
+      </div>
+      <div class="gallery" id="product_filter">
+         <!-- Tabbed list -->
+         <!-- <p class="tabTitle">Filter products: </p>
+         <ul class="tabbedList lowprofile smallertext" id="filterButton">
+            
+            {% for filters in pages['filters'] %}
+
+             <span class="button-checkbox">
+               <button type="button" class="btn" data-color="primary">{{filters.property_name|lower|replace({' ': '-', '/': '-'})}}</button>
+               <input type="checkbox" name="{{filters.property_name|lower|replace({' ': '-', '/': '-'})}}" value=".{{filters.property_name|lower|replace({' ': '-', '/': '-'})}}" id="{{filters.property_name|lower|replace({' ': '-', '/': '-'})}}" class="hidden">
+             </span>
+            {% endfor %}
+         </ul> -->
+         <!-- <div class="title indexTitle" id="{{pages.page_heading}}" style="visibility: visible; display: block;">{{pages.page_heading}}</div> -->
+         {% for productDetails in pages['productDetails'] %}
+         {% set wrapper_attr = create_attribute() %} 
+         {% set wrapper_attr = wrapper_attr.addClass('product') %}
+         {% for filterVal in pages['filterVal'][loop.index0] %}
+         {% set wrapper_attr = wrapper_attr.addClass(filterVal.property_name|lower|replace({' ': '-', '/': '-', '(': '', ')': ''})) %} 		
+         {% endfor %}
+         {% set wrapper_attr = wrapper_attr.addClass(classes) %}
+
+         <div {{ wrapper_attr }} >{{ productDetails.Code }}
+            <a href="{{ productDetails.URL }}"> <img alt="{{ productDetails.Code }}" src="{{ pages['imageURL'][loop.index0][0].image_path }}"></a>
+            {{ productDetails.Name }}
+            <a class="buynow" href="{{ productDetails.URL }}">
+               <img alt="More Info" onmouseout="this.src='/{{ directory }}/images/buyinfo.png';" onmouseover="this.src='/{{ directory }}/images/buyinfo_hover.png';" src="/{{ directory }}/images/buyinfo.png">
+            </a>
+         </div>
+      {% endfor %}
+   </div>
+</article>

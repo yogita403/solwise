@@ -1,0 +1,41 @@
+
+/*Variables*/
+
+$fontFamily: 'Open Sans', sans-serif;
+$baseFontSize: 15px;
+$bodyBGColor: #fff;
+$baseFontColor: #444;
+
+$linkColor: #27ae60;
+$linkColorHover: #27ae60;
+$greyOne : #eee;
+
+
+/*Header*/
+
+$headerBGColor: #000;
+$headerTextColor: #fff;
+
+
+/*Menu Color*/
+
+$menuTextColor: #333;
+$menuTextActiveColor: $linkColor;
+$menuDropDownBg: #333;
+
+
+/*Mixins*/
+
+@mixin globalButton(){
+	background: $linkColor;
+	color: #fff;
+	border: 0;
+	padding: 10px 15px;
+	line-height: 100%;
+	border-radius: 0;
+}
+
+@mixin globalButtonHover(){
+	background: $linkColorHover;
+	color: #fff;
+}

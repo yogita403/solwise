@@ -1,0 +1,11 @@
+<?php
+use Drupal\Core\Url;
+
+function solwise_import_toolbar_alter(&$items) {
+  $link = [
+    'type' => 'link',
+    'title' => 'Import Page Scrape',
+    'url' => Url::fromRoute('solwise_import.html_import'),
+  ];
+  $items['solwise']['tray']['solwise_tray']['#links']['import'] = $link;
+}

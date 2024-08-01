@@ -1,0 +1,26 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_body_specifications_tab
+    - node.type.discontinued_product_page
+  module:
+    - solwise_page_scrapes
+id: node.discontinued_product_page.field_body_specifications_tab
+field_name: field_body_specifications_tab
+entity_type: node
+bundle: discontinued_product_page
+label: 'Body Specifications Tab'
+description: ''
+required: true
+translatable: false
+default_value:
+  -
+    html: "<div>\r\n<table>\r\n\t<tbody>\r\n\t\t<tr>\r\n\t\t\t<th>Main Chipset</th>\r\n\t\t\t<td>Atheros (Intellon) AR7400</td>\r\n\t\t</tr>\r\n\t\t<tr>\r\n\t\t\t<th>Computer Interface</th>\r\n\t\t\t<td>IEEE802.3 (10BASE-T)<br />\r\n\t\t\tIEEE802.3u (100BASE-T)<br />\r\n\t\t\tIEEE802.3ab (1000BASE-T)</td>\r\n\t\t</tr>\r\n\t\t<tr>\r\n\t\t\t<th>Standards</th>\r\n\t\t\t<td>IEEE 1901 / home plug AV</td>\r\n\t\t</tr>\r\n\t\t<tr>\r\n\t\t\t<th>Network Interface</th>\r\n\t\t\t<td>One RJ-45 (10/100/1000Base-T Ethernet)<br />\r\n\t\t\tOne 500Mbps power line port supporting co-existence with home plug 1.0 (14/85Mbps)</td>\r\n\t\t</tr>\r\n\t\t<tr>\r\n\t\t\t<th>Security</th>\r\n\t\t\t<td>128-bit AES link encryption with key management</td>\r\n\t\t</tr>\r\n\t\t<tr>\r\n\t\t\t<th>Data PHY Rate</th>\r\n\t\t\t<td>500Mbps over Powerline and 10/100/1000Mbps over Ethernet</td>\r\n\t\t</tr>\r\n\t\t<tr>\r\n\t\t\t<th>Modulation Schemes</th>\r\n\t\t\t<td>OFDM symbol modulation on line synchronization 1024/256/64/16/8 - QAM, QPSK, BPSK, ROBO carrier modulation</td>\r\n\t\t</tr>\r\n\t\t<tr>\r\n\t\t\t<th>Frequency Band</th>\r\n\t\t\t<td>2 ~ 50 Mhz</td>\r\n\t\t</tr>\r\n\t\t<tr>\r\n\t\t\t<th>Additional Protocols</th>\r\n\t\t\t<td>Mix of TDMA and CSMA/CA channel access scheme;<br />\r\n\t\t\tCO device generates a periodic beacon carrier for channel access scheme</td>\r\n\t\t</tr>\r\n\t\t<tr>\r\n\t\t\t<th>Operation Range</th>\r\n\t\t\t<td>Estimated range of 300 meters in wall power lines</td>\r\n\t\t</tr>\r\n\t\t<tr>\r\n\t\t\t<th>Cabling</th>\r\n\t\t\t<td>Cat. 5 UTP cable</td>\r\n\t\t</tr>\r\n\t\t<tr>\r\n\t\t\t<th>Operating Temperature</th>\r\n\t\t\t<td>0°C to 40°C ambient temperature</td>\r\n\t\t</tr>\r\n\t\t<tr>\r\n\t\t\t<th>Storage Temperature</th>\r\n\t\t\t<td>-20°C to 70°C ambient temperature</td>\r\n\t\t</tr>\r\n\t\t<tr>\r\n\t\t\t<th>Humidity</th>\r\n\t\t\t<td>10 to 90% maximum (non-condensing)</td>\r\n\t\t</tr>\r\n\t\t<tr>\r\n\t\t\t<th>Power Input</th>\r\n\t\t\t<td>100 ~ 240V @ 50/60Hz internal</td>\r\n\t\t</tr>\r\n\t\t<tr>\r\n\t\t\t<th>Dimensions</th>\r\n\t\t\t<td>See image above<br />\r\n\t\t\tPacking Box: 14 x 18 x 8 cm</td>\r\n\t\t</tr>\r\n\t\t<tr>\r\n\t\t\t<th>Warranty</th>\r\n\t\t\t<td>*2 year warranty on sales from 1st December 2013</td>\r\n\t\t</tr>\r\n\t\t<tr>\r\n\t\t\t<th colspan=\"2\">NOTE : Specifications are subject to change without prior notice.</th>\r\n\t\t</tr>\r\n\t</tbody>\r\n</table>\r\n</div>\r\n"
+    created: null
+default_value_callback: ''
+settings:
+  start_marker: '<!-- InstanceBeginEditable name="specifications" -->'
+  end_marker: '<!-- InstanceEndEditable -->'
+  rows: 8
+field_type: html_scrape

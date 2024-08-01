@@ -1,0 +1,4 @@
+solwise.import:
+  title: Import HTML Contents
+  route_name: solwise_import.html_import
+  parent: system.admin_structure

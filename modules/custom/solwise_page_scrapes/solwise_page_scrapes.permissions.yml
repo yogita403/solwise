@@ -1,0 +1,19 @@
+add page scrape entities:
+  title: 'Create new Page scrape entities'
+
+administer page scrape entities:
+  title: 'Administer Page scrape entities'
+  description: 'Allow to access the administration form to configure Page scrape entities.'
+  restrict access: true
+
+delete page scrape entities:
+  title: 'Delete Page scrape entities'
+
+edit page scrape entities:
+  title: 'Edit Page scrape entities'
+
+view published page scrape entities:
+  title: 'View published Page scrape entities'
+
+view unpublished page scrape entities:
+  title: 'View unpublished Page scrape entities'
